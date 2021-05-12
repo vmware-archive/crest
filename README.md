@@ -112,7 +112,7 @@ Train the machine learning model to a specific domain:
 |---------------|------------------------------------|--------------------------------------------------------------------------------|--------|
 | http://gov.uk | Tell us whether you accept cookies | We use cookies to collect information about how you use GOV.UK. We use this... | True   |
 2. Change the dataset directory path i.e. ['model_params']['training_data_input_file_name'] in the config.py file.
-3. Run a python script placed in the `src` directory by executing the following command:
+3. Run a python script placed in the `src/crest/utils/` directory by executing the following command:
 ```python
     python train_model.py
 ```
