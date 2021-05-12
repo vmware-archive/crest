@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:00:03.419 --> 00:00:11.610
+Amit Garg: Hi everyone. I am in a machine learning intern working on automated accessibility testing for an exciting xlabs project called v ally
+
+2
+00:00:12.450 --> 00:00:19.890
+Amit Garg: ally is the abbreviation for accessibility and accessibility is about making the product equally accessible for people having disabilities.
+
+3
+00:00:20.580 --> 00:00:26.460
+Amit Garg: So we are enabling engineers to develop accessible solutions by providing automated accessibility tests.
+4
+00:00:27.090 --> 00:00:38.250
+Amit Garg: A little bit about the background, at VMware we have vat's. It's a testing as a service, platform that also supports accessibility testing, but unfortunately 70% of the testing is still done manually.
+5
+00:00:39.120 --> 00:00:51.060
+Amit Garg: And we all know manual testing is tedious work. So to demonstrate this. I'll provide you an example and experienced tester takes at least 25 minutes to do just the keyword focus indicator testing.
+
+6
+00:00:52.260 --> 00:00:54.660
+Amit Garg: And our solution provides this testing within a minute.
+
+7
+00:00:55.740 --> 00:00:58.020
+Amit Garg: So I'll discuss about the approaches that we have used.
+
+8
+00:00:59.090 --> 00:01:06.920
+Amit Garg: We have mainly focus on three new tasks. The first is keyword focus indicator to perform this task we first simulated tab press using Selenium
+
+9
+00:01:07.280 --> 00:01:18.110
+Amit Garg: And then we compare the CSS of the focus element before and after the tab press and then we see if there is any change in the background forground or there is any additional outline to the component
+
+10
+00:01:19.010 --> 00:01:26.510
+Amit Garg: And then we take luminosity ratio based on the WCAG guidelines if it is greater than three, then we are giving it a pass.
+
+11
+00:01:27.230 --> 00:01:34.190
+Amit Garg: And then we are returning all the failed elements along with the their xpaths so that developer can directly go and fix a component
+
+12
+00:01:35.790 --> 00:01:40.920
+Amit Garg: Moving to the next task that is audio and video podcast transcript and cat closed captioning check
+
+13
+00:01:41.610 --> 00:01:58.830
+Amit Garg: Where our task is to identify whether the video and audio has closed captioning or transcript associated with it to perform this task with first scrape all the audio and video tags from the web page, and then we look for all the clickable elements that contains subtitle or captions keywords.
+
+14
+00:01:58.120 --> 00:02:00.460
+Amit Garg: Moving to the next task that is Header analysis.
+
+15
+00:02:00.570 --> 00:02:10.800
+Amit Garg: Where our task is to identify whether the content below the header is relevant or not. So to perform this task we first scrape all the headers and its content from the web page.
+
+16
+00:02:11.280 --> 00:02:15.060
+Amit Garg: And then using natural language processing approach to do textual entailment.
+
+17
+00:02:15.810 --> 00:02:25.050
+Amit Garg: Textual entailment is nothing. It's like whether sentence P follows us and Sentence A. In our case, sentence B is content and sentence A is header.
+
+18
+00:02:26.590 --> 00:02:42.850
+Amit Garg: And we have got pretty good results with the with this approach. Our mission is to enable engineers to provide accessible solutions using the reliable comprehensive automated accessibility testing there by adding an extra a to the VMware vision that is any user
+
+19
+00:02:43.990 --> 00:02:54.460
+Amit Garg: We have lots of advantages of having this approach, like it's more reliable as compared to the manual testing it takes less time, it is more robust
+
+20
+00:02:54.470 --> 00:02:59.970
+Amit Garg: And currently we are targeting the products that are deployed using HTML, because as per WCAG guidelines, accessibility testing has been retreat for all the STM will apply
+
+

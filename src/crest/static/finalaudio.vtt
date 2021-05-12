@@ -1,0 +1,286 @@
+﻿WEBVTT
+
+1
+00:00:01.680 --> 00:00:05.940
+<v 0>So it was my vision from the beginning that this tool would be an open source</v>
+
+2
+00:00:05.941 --> 00:00:10.560
+tool. It's really important to understand that a lot of people don't have the
+
+3
+00:00:10.561 --> 00:00:15.420
+resources to go out and buy expensive tools to test their
+
+4
+00:00:15.421 --> 00:00:17.970
+products for accessibility. And likewise,
+
+5
+00:00:17.971 --> 00:00:21.810
+they don't have the time to sit there and do everything manually.
+
+6
+00:00:22.110 --> 00:00:26.250
+The idea was to take things that were really
+
+7
+00:00:26.251 --> 00:00:30.870
+tedious and to try to automate them in a way that they couldn't be
+
+8
+00:00:30.871 --> 00:00:34.320
+automated it using current code inspection techniques,
+
+9
+00:00:34.530 --> 00:00:38.040
+largely because there wasn't any data to be manipulated.
+
+10
+00:00:38.041 --> 00:00:40.230
+And that's what assistive technology is all about.
+
+11
+00:00:40.231 --> 00:00:44.490
+It's making sure that people with disabilities can use the data,
+
+12
+00:00:44.970 --> 00:00:46.740
+but using their system technology.
+
+13
+00:00:47.070 --> 00:00:51.540
+So my vision was to find problems sooner, uh,
+
+14
+00:00:51.570 --> 00:00:56.460
+to not have a cost associated with them and to give people
+
+15
+00:00:56.461 --> 00:01:00.870
+time to focus on accessibility features that are fun and
+
+16
+00:01:00.871 --> 00:01:05.550
+innovative and not have to sit there and hit the tab button 87 times to figure
+
+17
+00:01:05.551 --> 00:01:07.680
+out if everything was keyboard accessible or not.
+
+18
+00:01:09.860 --> 00:01:14.060
+<v 1>So I'll be talking about my experience working in this area,</v>
+
+19
+00:01:15.710 --> 00:01:19.820
+uh, since I did not have a background of accessibility.
+
+20
+00:01:20.360 --> 00:01:23.570
+So it has not only added exposure in my career,
+
+21
+00:01:23.600 --> 00:01:28.550
+but also helped me to understand the importance of accessibility since
+
+22
+00:01:28.551 --> 00:01:32.960
+the automated accessibility testing using machine learning is a developing area.
+
+23
+00:01:33.560 --> 00:01:37.070
+And I really enjoyed being in this challenging environment.
+
+24
+00:01:37.610 --> 00:01:42.020
+It helped me to come up with my novel solutions to do something for our
+
+25
+00:01:42.030 --> 00:01:44.930
+society. And, uh, apart from that,
+
+26
+00:01:44.931 --> 00:01:49.310
+I got to learn the different phases of software development that I think it
+
+27
+00:01:49.311 --> 00:01:51.080
+would definitely help me in the future.
+
+28
+00:01:53.840 --> 00:01:57.830
+<v 0>So there's a number of ways that people can contribute to this project going</v>
+
+29
+00:01:57.831 --> 00:02:02.120
+forward, thinking of those methods in terms of t-shirt sizes,
+
+30
+00:02:02.121 --> 00:02:05.150
+we'll start with extra small and go up to extra large.
+
+31
+00:02:05.540 --> 00:02:07.910
+One of the things is we would like it.
+
+32
+00:02:07.911 --> 00:02:10.820
+If people contributed to the data model,
+
+33
+00:02:10.850 --> 00:02:15.500
+if you have a good generic data model that you've built using your
+
+34
+00:02:15.650 --> 00:02:16.483
+execution,
+
+35
+00:02:17.270 --> 00:02:21.470
+want to contribute that we can integrate that in with the products. Um,
+
+36
+00:02:21.500 --> 00:02:26.480
+also if you find things that we didn't anticipate, like let's say, uh,
+
+37
+00:02:26.510 --> 00:02:28.700
+there's a particular keyboard focus pattern.
+
+38
+00:02:28.701 --> 00:02:33.160
+That's legitimate that we're not giving the right results for, for some reason,
+
+39
+00:02:33.161 --> 00:02:37.970
+reporting those things will allow us to refine the code in order to produce
+
+40
+00:02:37.971 --> 00:02:39.620
+better results going forward.
+
+41
+00:02:40.220 --> 00:02:43.340
+In terms of medium-sized contributions,
+
+42
+00:02:43.490 --> 00:02:48.230
+we have identified 26 things that we want to add to this product
+
+43
+00:02:48.231 --> 00:02:52.970
+above and beyond the five that are already there and taking one of those on
+
+44
+00:02:52.971 --> 00:02:56.240
+as either an individual or as a team of individuals,
+
+45
+00:02:56.241 --> 00:03:00.640
+maybe a master's degree project or something like that, be definitely doable.
+
+46
+00:03:01.150 --> 00:03:04.660
+And then for, uh, the extra large, uh,
+
+47
+00:03:04.690 --> 00:03:06.340
+people who work for larger companies,
+
+48
+00:03:06.341 --> 00:03:10.870
+we have had offers of for contribution of resources.
+
+49
+00:03:10.900 --> 00:03:15.340
+So we will be getting additional machine learning resources, for example,
+
+50
+00:03:16.420 --> 00:03:19.210
+um, and, uh, design reviews and things like that.
+
+51
+00:03:19.211 --> 00:03:23.110
+So if you want to participate on a larger level, that's available as well.
+
+52
+00:03:25.530 --> 00:03:27.630
+<v 1>So to contribute to this project,</v>
+
+53
+00:03:27.840 --> 00:03:31.410
+people can go and look at open issues in the Gator rappel.
+
+54
+00:03:32.040 --> 00:03:36.900
+Then they can select issue that interests them and raise a pull request in the
+
+55
+00:03:36.901 --> 00:03:40.200
+format, defined in the contribution dot time defile.
+
+56
+00:03:40.800 --> 00:03:45.600
+Then moderator will review the changes and comment if anything needs to be
+
+57
+00:03:45.601 --> 00:03:48.810
+changed. And, uh, once changes are done,
+
+58
+00:03:49.020 --> 00:03:52.830
+the contribution will be added to the project and can be seen in the upcoming
+
+59
+00:03:52.831 --> 00:03:53.664
+versions.
+
+60
+00:03:56.310 --> 00:03:59.370
+<v 0>There area where you can contribute is in dashboarding.</v>
+
+61
+00:03:59.400 --> 00:04:04.020
+We will be taking some of the pieces from the VMware testing as a
+
+62
+00:04:04.021 --> 00:04:07.590
+service product, and those are going to be released into open source.
+
+63
+00:04:07.830 --> 00:04:12.630
+So if you have any experience with doing accessible test harnesses
+
+64
+00:04:12.660 --> 00:04:16.830
+or accessible dashboarding of testing results, uh,
+
+65
+00:04:16.860 --> 00:04:19.650
+those would be, uh, quite well received as well.
+
+66
+00:04:19.830 --> 00:04:22.260
+And if you can't contribute anything,
+
+67
+00:04:22.261 --> 00:04:26.610
+but you have an idea that you think is really important, open a ticket and get,
+
+68
+00:04:26.611 --> 00:04:27.840
+and we'll look at it,
+
+69
+00:04:27.900 --> 00:04:31.560
+explain why you think it's important and you talk to your friends about it.
+
+70
+00:04:31.561 --> 00:04:36.240
+If they can add their comments to your tickets as well,
+
+71
+00:04:36.241 --> 00:04:39.300
+to show a widespread support for your idea.
+
