@@ -1,0 +1,7 @@
+include requirements.txt
+recursive-include src/crest *
+exclude src/crest/test.log
+recursive-exclude src/crest/static *
+recursive-exclude src/crest/templates *
+recursive-exclude models/ *
+exclude src/crest/server.py

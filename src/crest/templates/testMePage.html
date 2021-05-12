@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1, user-scalable=0' name='viewport'>
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <!-- <title>Crest&trade; by VMware&reg;</title> -->
+    <title>Crest - TestMePage</title>
+    <!-- <link href='favicon.png' rel='shortcut icon'>
+    <link href='favicon.ico' rel='icon' type='image/ico'> -->
+    <link href={{ url_for("static", filename="all.css") }} rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      a:focus { 
+          text-decoration: none; 
+      }
+      #otln:focus {
+          color: red;
+      }
+
+      #bkgrnd:focus {
+          background-color: black;
+          color: white;
+          outline-style: none;
+      }
+
+      #boxShadow:focus {
+          /* border: 3px 3px 5px 6px #ccc; */
+          /* padding: 10px; */
+          box-shadow: 3px 3px 5px 6px red;
+          outline-style: none;
+      }
+
+      #noChange:focus {
+          outline-style: none;
+          border: none;
+          border: 0;
+      }
+
+      #borderChange:focus {
+          border: dashed red;
+          outline-style: none;
+      }
+
+      #focusLow:focus {
+          outline-style: solid;
+          outline-width: 1px;
+          outline-color: yellow;
+      }
+
+      #video1:focus {
+          outline-color: red;
+      }
+  </style>
+  </head>
+  <body class='index'>
+    <header>
+      <div class='peelback'></div>
+      <div class='container' style="justify-content: flex-end; display: flex;">
+        </div>
+      </div>
+    </header>
+    <section class='crest-def'>
+      <div class='container'>
+        <div class="row">
+          <div class="col-sm-6" style="margin: auto; text-align: center;">
+            <main id="maincontent"></main>
+            <h1><img alt="Crest Logo" src="https://raw.githubusercontent.com/vmware/crest/main/src/crest/static/crest_logo.png?token=ATSPAQ5SODZDGDZYBGKWNS3AUVQGO" /></h1>
+            <p style="font-size: 20px;">TestMePage</p>
+            <p style="font-size: 13px;">Evaluate this page to see Crest in action!</p>
+          </div>
+          <div class="col-sm-6">
+            <img alt="Crest Landing Page Display Image" src="https://raw.githubusercontent.com/vmware/crest/main/src/crest/static/crest_main_page.png?token=ATSPAQYGJI4PEMISDWIOQBDAUVQJS" />
+          </div>
+      </div>
+      </div>
+    </section>
+    <section >
+      <div class="container">
+        <div class="row">
+          <div class="content">
+            <h2>Keyboard Focus Indicator</h2>&nbsp;
+            <div class="c_wrapper" style="font-size: 13px;">
+
+                <p><b>1. Issue ID: cr_focus_low</b></p>
+                <p><b>Definition: </b>When active interface controls (buttons, links, forms, page tabs, etc.) receive keyboard
+                    focus, the visual
+                    focus indicator does not meet the required color contrast ratio of at least 3:1.</p>
+                <p><b>2. Issue ID: cr_focus_missing</b></p>
+                <p><b>Definition: </b>There is no visual keyboard focus indication when using TAB or SHIFT+TAB, and/or arrow
+                    keys
+                    (when applicable) to navigate through the controls (buttons, links, forms, page tabs, etc.) of the website.
+                </p>
+                <div>
+                    <div>The following are some scenarios:</div>
+                    &nbsp;&nbsp;&nbsp;<p><b>Success Scenarios:</b></p>
+                    <ul>
+                        <li>
+                            <a aria-label="Link 1"
+                                href="https://www.vmware.com/digital-foundation.html?src=WWW_US_HPH0_DigitalFoundation_SiteLink"
+                                id="otln">Link 1</a>
+                        </li><br />
+                        <li>
+                            <a aria-label="Link 2"
+                                href="https://www.vmware.com/digital-foundation.html?src=WWW_US_HPH0_DigitalFoundation_SiteLink"
+                                id="bkgrnd">Link 2</a>
+                        </li><br />
+                        <li>
+                            <a aria-label="Link 3"
+                                href="https://www.vmware.com/digital-foundation.html?src=WWW_US_HPH0_DigitalFoundation_SiteLink"
+                                id="boxShadow">Link 3</a>
+                        </li><br />
+                        <li>
+                            <a aria-label="Link 4"
+                                href="https://www.vmware.com/digital-foundation.html?src=WWW_US_HPH0_DigitalFoundation_SiteLink"
+                                id="borderChange">Link 4</a>
+                        </li>
+                    </ul>
+                    &nbsp;&nbsp;&nbsp;<p><b>Failed Scenarios:</b></p>
+                    <ul>
+                        <li>
+                            <a aria-label="Link 5"
+                                href="https://www.vmware.com/digital-foundation.html?src=WWW_US_HPH0_DigitalFoundation_SiteLink"
+                                id="noChange">Link 5</a>
+                        </li><br />
+                        <li>
+                            <a aria-label="Link 6"
+                                href="https://www.vmware.com/digital-foundation.html?src=WWW_US_HPH0_DigitalFoundation_SiteLink"
+                                id="focusLow">Link 6</a>
+                        </li><br />
+                    </ul>
+                </div>
+            </div>
+      </div>
+      </div>
+    </div>
+    </section>
+    <section >
+    <div class='container'>
+      <div class='row'>
+        <div class="content">
+          <h2 >Closed Captioning/Transcript Check</h2>&nbsp;
+          <div class="c_wrapper" style="font-size: 13px;">
+
+            <p><b>1. Issue ID: cr_transcript_missing</b></p>
+            <p><b>Definition: </b>Audio-only content such as podcasts and audio recordings of speeches and press
+                conferences are not made available by transcript.</p>
+    
+            <p><b>2. Issue ID: cr_captions_missing</b></p>
+            <p><b>Definition: </b>Synchronized captions are not provided for video or other multimedia content that
+                contains audio.</p>
+            <div>
+                <div>The following are some scenarios:</div>
+                &nbsp;&nbsp;&nbsp;<p><b>Success Scenarios:</b></p>
+                <ul>
+                    <li>
+                        <div><video id="video1" width="420" height="300" controls>
+                                <source src={{ url_for("static", filename="UT20_AmitGarg_Poster_Video.mp4") }}
+                                    type="video/mp4">
+                                <track label="English" kind="subtitles" srclang="en"
+                                    src={{ url_for("static", filename="UT20_AmitGarg_Transcript.vtt") }} default>
+                            </video></div>
+                    </li><br />
+                    <!-- <li>
+                        <iframe width="420" height="300"
+                            src="https://www.youtube-nocookie.com/embed/20SHvU2PKsM?autoplay=0">
+                        </iframe>
+                    </li><br /> -->
+                    <li>
+                        <div>
+                            <audio controls>
+                                <source src={{ url_for("static", filename="interview_audio.m4a") }} type="audio/mp4">
+                            </audio>
+                            <div>
+                                <p name="transcript"><b>Transcript</b></p>
+                                <p> <b> Speaker 1(Sheri Byrne-Haber)</b>: So it was my vision from the beginning that this
+                                    tool would be an
+                                    open source
+                                    tool. It's really important to understand that a lot of people don't have the resources
+                                    to go out and buy expensive tools to test their products for accessibility. And
+                                    likewise, they don't have the time to sit there and do everything manually. The idea was
+                                    to take things that were really tedious and to try to automate them in a way that they
+                                    couldn't be automated it using current code inspection techniques, largely because there
+                                    wasn't any data to be manipulated. And that's what assistive technology is all about.
+                                    It's making sure that people with disabilities can use the data, but using their system
+                                    technology. So my vision was to find problems sooner, uh, to not have a cost associated
+                                    with them and to give people time to focus on accessibility features that are fun and
+                                    innovative and not have to sit there and hit the tab button 87 times to figure out if
+                                    everything was keyboard accessible or not.
+                                    <br />
+                                    <b>Speaker 2(Amit Garg)</b>: So I'll be talking about my experience working in this
+                                    area, since I
+                                    did not
+                                    have a background in accessibility. So it has not only added exposure in my career, but
+                                    also helped me to understand the importance of accessibility since the automated
+                                    accessibility testing using machine learning is a developing area. And I really enjoyed
+                                    being in this challenging environment. It helped me to come up with novel solutions to
+                                    do something for our society. And, apart from that, I got to learn the different phases
+                                    of software development that I think it would definitely help me in the future.
+                                    <br />
+                                    <b>Speaker 1(Sheri Byrne-Haber)</b>: So there's a number of ways that people can
+                                    contribute to this project
+                                    going
+                                    forward, thinking of those methods in terms of t-shirt sizes, we'll start with extra
+                                    small and go up to extra large. One of the things is we would like it. If people
+                                    contributed to the data model, if you have a good generic data model that you've built
+                                    using your execution, want to contribute that we can integrate that in with the
+                                    products. Um, also if you find things that we didn't anticipate, like let's say, uh,
+                                    there's a particular keyboard focus pattern. That's legitimate that we're not giving the
+                                    right results for, for some reason, reporting those things will allow us to refine the
+                                    code in order to produce better results going forward. In terms of medium-sized
+                                    contributions, we have identified 26 things that we want to add to this product above
+                                    and beyond the five that are already there and taking one of those on as either an
+                                    individual or as a team of individuals, maybe a master's degree project or something
+                                    like that, be definitely doable. And then for, uh, the extra large, uh, people who work
+                                    for larger companies, we have had offers of for contribution of resources. So we will be
+                                    getting additional machine learning resources, for example, um, and, uh, design reviews
+                                    and things like that. So if you want to participate on a larger level, that's available
+                                    as well.
+                                    <br />
+                                    <b>Speaker 2(Amit Garg)</b>: So to contribute to this project, people can go and look at
+                                    open
+                                    issues in
+                                    the Github repo. Then they can select issue that interests them and raise a pull
+                                    request in the format, defined in the contribution.md file. Then moderator will
+                                    review the changes and comment if anything needs to be changed. And, uh, once changes
+                                    are done, the contribution will be added to the project and can be seen in the upcoming
+                                    versions
+                                    <br />
+                                    <b>Speaker 1(Sheri Byrne-Haber)</b>: There area where you can contribute is in
+                                    dashboarding. We will be
+                                    taking
+                                    some of the pieces from the VMware testing as a service product, and those are going to
+                                    be released into open source. So if you have any experience with doing accessible test
+                                    harnesses or accessible dashboarding of testing results, uh, those would be, uh, quite
+                                    well received as well. And if you can't contribute anything, but you have an idea that
+                                    you think is really important, open a ticket and get, and we'll look at it, explain why
+                                    you think it's important and you talk to your friends about it. If they can add their
+                                    comments to your tickets as well, to show a widespread support for your idea.
+                                    <br />
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                &nbsp;&nbsp;&nbsp;<p><b>Failed Scenarios:</b></p>
+                <ul>
+                    <li>
+                        <div><video width="420" height="300" controls>
+                                <source src={{ url_for("static", filename="UT20_AmitGarg_Poster_Video.mp4") }}
+                                    type="video/mp4">
+                            </video></div>
+                    </li><br />
+                    <li>
+                        <iframe width="420" height="300"
+                            src="https://www.youtube-nocookie.com/embed/20SHvU2PKsM?autoplay=0&amp;enablejsapi=1&amp;disableKb=1&amp;playsinline=0&amp;start=0&amp;controls=0&amp;cc_load_policy=0&amp;hl=en&amp;modestbranding=1&amp;rel=0&amp;html5=1&amp;iv_load_policy=3&amp;origin=https%3A%2F%2Fwww.w3.org&amp;widgetid=1">
+                        </iframe>
+                    </li><br />
+                    <li>
+                        <div>
+                            <audio controls>
+                                <source src={{ url_for("static", filename="interview_audio.m4a") }} type="audio/mp4">
+                            </audio>
+                        </div>
+                    </li><br />
+                </ul>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section>
+      <div class='container'>
+        <div class='row'>
+          <div class='content' style="font-size: 13px;">
+            <h2 >Heading Analysis</h2>&nbsp;
+            <div class="c_wrapper" style="font-size: 13px;">
+
+                <p><b>1. Issue ID: cr_heading_unrelated</b></p>
+                <p><b>Definition: </b>The content immediately following a heading identified by machine learning is
+                    possibly unrelated to the topic or purpose.</p>
+                <div>
+                    <div>The following are some scenarios:</div>
+                    &nbsp;&nbsp;&nbsp;<p><b>Success Scenarios:</b></p>
+                    <ul>
+                        <li>
+                            <h4>Persons with disabilities</h4>
+                            <div>Includes carers, your rights, benefits and the Equality Act.</div>
+                        </li><br />
+                        <li>
+                            <h4>Nature Conservation</h4>
+                            <div><img alt="nature, nature conservation, wildlife"
+                                    src="https://bsmedia.business-standard.com/_media/bs/img/article/2020-07/28/full/1595904030-4016.jpg"
+                                    title="nature, nature conservation, wildlife" style="width: 25%;">
+                                <div>
+                        </li><br />
+                        <li>
+                            <h4>Explore VMware Multi-Cloud Solution</h4>
+                            <div>The impact of cloud is undeniable: from instant access to infinite IT resources and new
+                                application
+                                architectures, to redefined IT operations and the acceleration of digital transformation. And
+                                now,
+                                we’re taking it even further. Any App. Any Cloud.</div>
+                        </li><br />
+        
+                    </ul>
+                    &nbsp;&nbsp;&nbsp;<p><b>Failed Scenarios:</b></p>
+                    <ul>
+                        <li>
+                            <h4>This is a heading with no Content</h4>
+                            <div></div>
+                        </li><br />
+                        <li>
+                            <h4>UN Podcasts</h4>
+                            <div>COVID-19 widening gender gap in Pakistan</div>
+                        </li><br />
+                        <li>
+                            <div>
+                                <p> Misaligned document</p>
+                                <h4>Did you know?</h4>
+                            </div>
+                            <div>As the world’s only truly universal global organization, the United Nations has become the
+                                foremost forum to address issues that transcend national boundaries and cannot be resolved by
+                                any one country acting alone.</div>
+                        </li><br />
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class='container'>
+        <div>
+          <!-- <p>
+            <a class="vmware" target="_blank" href="http://www.vmware.com">VMware, Inc.</a>
+          </p> -->
+          <!-- <p>
+            &copy;
+            2020
+            VMware, Inc. All Rights Reserved.
+          </p> -->
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  <!-- <script src="//use.typekit.net/lqm4sxw.js" type="text/javascript"></script><script src="assets/js/all.js" type="text/javascript"></script> -->
+  <script type="text/javascript">
+    try{Typekit.load()}catch(e){}
+  </script>
+</html>

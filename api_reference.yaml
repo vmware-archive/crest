@@ -1,0 +1,937 @@
+# Copyright 2020-2021 VMware, Inc.
+# SPDX-License-Identifier: MIT
+openapi: '3.0.2'
+info:
+  title: Crest
+  version: '1.0.0'
+  description: |
+        
+        Crest quickly tests any HTML web page for a simple way to solve your accessibility testing problems. Provide a website URL to our callable API and expose potential WCAG violations.
+
+        <hr />
+        
+        ## Getting Started with Crest in 5 Minutes
+        
+        To get you started quickly let’s dive into the necessary steps needed to set up the environment.
+        
+        ### To use Crest as a Python Library
+        
+        #### Using Pip
+        
+        1. Install Crest using python package manager (Make sure pip is installed in your system).
+        
+        ```python 
+        pip install crest
+        ```
+
+        ### To use Crest as a Service
+
+        #### Using Conda
+        
+        1. Download and Install Miniconda from [conda.io](https://docs.conda.io/en/latest/miniconda.html)
+
+        2. For Windows, launch Miniconda prompt shell. For MacOS, launch the terminal.
+
+        3. Clone the Crest repository. More details can be found at [docs.github.com](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+        4. Go to "crest" folder in your terminal/prompt shell. Run command.
+        ```python
+        conda env create -f environment.yml
+        conda activate crest
+        ```
+        
+        5. Install chromedriver. The details can be found in [chromium.org](https://chromedriver.chromium.org/downloads).
+
+        6. Download and Install google-chrome-stable from [ubuntuupdates.org](https://www.ubuntuupdates.org/package/google_chrome/stable/main/base/google-chrome-stable).
+
+        7. Once all the required libraries are installed, go to 'src/crest' folder and run the below command in your terminal/prompt shell. 
+        ```python
+        FLASK_APP=server.py FLASK_ENV=development flask run --port 3000
+        ```
+        
+        #### Using Docker
+        
+        1. Clone the repository. More details can be found at [docs.github.com](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
+        2. Download and Install docker from [docker.com](https://docs.docker.com/get-docker/). Note: Make sure your docker server as well as crest image is running.
+
+        3. Go to "crest" folder in your terminal/prompt shell. Run command.
+        ```python
+        docker build -t crest .
+        ```
+        
+        4. Once the docker image is created, run it by executing the following command.
+        ```python
+        docker container run --name crest_container -p 3000:3000 crest 
+        ```
+
+        **Note: A machine learning model will be downloaded from [huggingface.co](https://huggingface.co/gargam/roberta-base-crest) when you use the Heading Analysis/ Crest Single API for the first time. It will be saved in your system's cache for future use and could take approximately 2 GB of your system's memory.**
+
+  termsOfService: "https://github.com/vmware/crest/blob/main/LICENSE"
+  contact:
+    name: "API developer"
+    email: "gargam@vmware.com"
+  license:
+    name: "MIT"
+    url: "https://github.com/vmware/crest/blob/main/LICENSE"
+  
+servers:
+  - url: "http://{server-ip}:{port}/"
+    description: "Development Server"
+    variables:
+      server-ip:
+        default: localhost
+        description: If the server is spinned up in your local environment
+      port:
+        default: '3000'
+
+components:
+  schemas:
+    issue_item:
+      type: object
+      description: A JSON object that contains information about the issue.
+      required:
+        - "count"
+        - "description"
+        - "id"
+        - "level"
+      properties:
+        count:
+          type: integer
+          format: int32
+          description: Represents the count of the issue.
+        description:
+          type: string
+          description: Brief description of the issue.
+        id:
+          type: string
+          description: Issue ID name given by Crest.
+        level:
+          type: string
+          description: Refers to the conformance level defined by WCAG.
+        xpaths:
+          type: array
+          description: Location of failed elements identified by paths and css selectors. Default is xpaths. However, the key i.e. "xpaths" will be changed to "selectors" if reporttype 4 is given.
+
+    failure_status:
+      type: object
+      description: A JSON object represents the type of exception that occurred.
+      required:
+        - "error"
+        - "success"
+      properties:
+        error:
+          type: string
+          description: Type of exception occured in the server.
+        success:
+          type: string
+          description: "'true' indicates successful execution of script to test page. 'false' indicates that the page is not testable."
+
+    failure_response:
+      type: object
+      description: A JSON object that provides details about the failure response.
+      required:
+        - "status"
+      properties:
+        status:
+          $ref: '#/components/schemas/failure_status'
+
+    success_status:
+      type: object
+      description: A JSON object that provides details about the success response.
+      required:
+        - "httpstatuscode"
+        - "success"
+      properties:
+        httpstatuscode:
+          type: integer
+          description: Status code recieved from the server.
+        success:
+          type: string
+          description: "'true' indicates successful execution of script to test page. 'false' indicates that the page is not testable."
+
+    focus_indicator_items:
+      type: object
+      description: List of Issue IDs that are checked by the Keyboard Focus Indicator Functionality.
+      properties:
+        cr_focus_low:
+          $ref: '#/components/schemas/issue_item'
+        cr_focus_missing: 
+          $ref: '#/components/schemas/issue_item'
+
+    focus_indicator_errors:
+      type: object
+      description: Error details related to the Focus Indicator Issue IDs.
+      properties:
+        count:
+          description: Represents the count of the issue.
+          type: integer
+        description:
+          description: A brief description of the error.
+          type: string
+        items:
+          $ref: '#/components/schemas/focus_indicator_items'
+
+    focus_indicator_categories:
+      type: object
+      description: Identifies type of issue (errors or alerts).
+      properties:
+        error:
+          $ref: '#/components/schemas/focus_indicator_errors'
+
+    focus_indicator_statistics:
+      type: object
+      description: Statistics details related to the Focus Indicator Functionality.
+      required:
+        - "allitemcount"
+        - "pageurl"
+        - "time"
+        - "totalelements"
+      properties:
+        allitemcount:
+          type: integer
+          description: Total number of elements that are having issues.
+        pageurl:
+          type: string
+          description: The URL that has been tested.
+        time:
+          type: number
+          description: Time taken to perform the testing.
+        totalelements:
+          type: integer
+          description: Total elements that has been tested.
+
+    focus_indicator_success_response:
+      type: object
+      description: A JSON object that contains information of the Focus Indicator success response.
+      required:
+        - categories
+        - statistics
+        - status
+      properties:
+        categories:
+          $ref: '#/components/schemas/focus_indicator_categories'
+        statistics:
+          $ref: '#/components/schemas/focus_indicator_statistics'
+        status:
+          $ref: '#/components/schemas/success_status'
+
+    cc_transcript_issue_item:
+      type: object
+      description: A JSON object that contains information of the CC and Transcript check Issue Item.
+      required:
+        - "count"
+        - "description"
+        - "id"
+        - "level"
+      properties:
+        count:
+          type: integer
+          format: int32
+          description: Represents the count of the issue.
+        description:
+          type: string
+          description: Brief description of the issue.
+        id:
+          type: string
+          description: Issue ID name given by Crest.
+        level:
+          type: string
+          description: Refers to the conformance level defined by WCAG.
+
+    cc_transcript_statistics:
+      type: object
+      description: Statistics details related to the CC and Transcript Functionality.
+      required:
+        - "allitemcount"
+        - "pageurl"
+        - "time"
+        - "totalelements"
+        - "totalaudios"
+        - "totalvideos"
+      properties:
+        allitemcount:
+          type: integer
+          description: Total number of elements that are having issues.
+        pageurl:
+          type: string
+          description: The URL that has been tested.
+        time:
+          type: number
+          description: Time taken to perform the testing.
+        totalelements:
+          type: integer
+          description: Total elements that has been tested.
+        totalaudios:
+          type: integer
+          description: Total audios that are present on the webpage.
+        totalvideos:
+          type: integer
+          description: Total videos that are present on the webpage.
+
+    cc_transcript_items:
+      type: object
+      description: A JSON object represents issues related to the Closed Captioning and Transcript check.
+      properties:
+        cr_captions_missing:
+          $ref: '#/components/schemas/cc_transcript_issue_item'
+        cr_transcript_missing:
+          $ref: '#/components/schemas/cc_transcript_issue_item'
+
+    cc_transcript_errors:
+      type: object
+      description: Error details related to the CC and Transcript Issue IDs.
+      properties:
+        count:
+          description: Number of errors
+          type: integer
+        description:
+          description: Description of the error
+          type: string
+        items:
+          $ref: '#/components/schemas/cc_transcript_items'
+
+    cc_transcript_categories:
+      type: object
+      description: Identifies type of issue (errors or alerts).
+      properties:
+        error:
+          $ref: '#/components/schemas/cc_transcript_errors'
+
+    cc_transcript_success_response:
+      type: object
+      description: A JSON object that contains information of the CC and Transcript success response.
+      required:
+        - categories
+        - statistics
+        - status
+      properties:
+        categories:
+          $ref: '#/components/schemas/cc_transcript_categories'
+        statistics:
+          $ref: '#/components/schemas/cc_transcript_statistics'
+        status:
+          $ref: '#/components/schemas/success_status'
+
+    heading_analysis_statistics:
+      type: object
+      description: Statistics details related to the Heading Analysis Functionality.
+      required:
+        - "allitemcount"
+        - "pageurl"
+        - "time"
+        - "totalelements"
+      properties:
+        allitemcount:
+          type: integer
+          description: Total number of elements that are having issues.
+        pageurl:
+          type: string
+          description: The URL that has been tested.
+        time:
+          type: number
+          description: Time taken to perform the testing.
+        totalelements:
+          type: integer
+          description: Total elements that has been tested.
+
+    heading_analysis_items:
+      type: object
+      description: A JSON object represents issues related to the Heading Analysis check.
+      properties:
+        cr_heading_unrelated:
+          $ref: '#/components/schemas/issue_item'
+    
+    heading_analysis_alerts:
+      type: object
+      description: Alert details related to the Heading Analysis Issue IDs.
+      properties:
+        count:
+          description: Represents the number of alerts
+          type: integer
+        description:
+          description: A brief description of the alert.
+          type: string
+        items:
+          $ref: '#/components/schemas/heading_analysis_items'
+
+    heading_analysis_categories:
+      type: object
+      description: Identifies type of issue (errors or alerts).
+      properties:
+        alert:
+          $ref: '#/components/schemas/heading_analysis_alerts'
+
+    heading_analysis_success_response:
+      type: object
+      description: A JSON object that contains information of the Heading Analysis success response.
+      required:
+        - categories
+        - statistics
+        - status
+      properties:
+        categories:
+          $ref: '#/components/schemas/heading_analysis_categories'
+        statistics:
+          $ref: '#/components/schemas/heading_analysis_statistics'
+        status:
+          $ref: '#/components/schemas/success_status'
+
+    request_body:
+      type: object
+      description: |
+          The request body contains a parameter "url" that a user wants to test the WCAG violations on. The "reporttype" parameter represents the type of locator a user wants in return.
+      required:
+        - url
+      properties:
+        url: 
+          description: A URL to check WCAG violations on. It should be a valid URL. 
+          type: string
+        reporttype:
+          description: "reporttype is either xpath(value: 3) or css selector(value: 4)"
+          type: integer
+
+    crest_error_items:
+      type: object
+      description: Error Issue IDs details related to Crest.
+      properties:
+        cr_focus_low:
+          $ref: '#/components/schemas/issue_item'
+        cr_focus_missing:
+          $ref: '#/components/schemas/issue_item'
+        cr_captions_missing:
+          $ref: '#/components/schemas/cc_transcript_issue_item'
+        cr_transcript_missing:
+          $ref: '#/components/schemas/cc_transcript_issue_item'
+
+    crest_errors:
+      type: object
+      description: Details related to Error that contains count, description, etc.
+      properties:
+        count:
+          description: Represents the count of the errors.
+          type: integer
+        description:
+          description: Description of the error
+          type: string
+        items:
+          $ref: '#/components/schemas/crest_error_items'
+
+    crest_alert_items:
+      type: object
+      description: Alert Issue IDs details related to Crest.
+      properties:
+        cr_heading_unrelated:
+          $ref: '#/components/schemas/issue_item'
+
+    crest_alerts:
+      type: object
+      description: Details related to Alert that contains count, description, etc.
+      properties:
+        count:
+          description: Represents the count of the alerts.
+          type: integer
+        description:
+          description: A brief description of the alert.
+          type: string
+        items:
+          $ref: '#/components/schemas/crest_alert_items'
+
+    crest_categories:
+      type: object
+      description: Identifies type of issue (errors or alerts).
+      properties:
+        alert:
+          $ref: '#/components/schemas/crest_alerts'
+        error:
+          $ref: '#/components/schemas/crest_errors'
+
+    crest_statistics:
+      type: object
+      description: Statistics details related to Crest.
+      required:
+        - "allitemcount"
+        - "pageurl"
+        - "time"
+        - "totalelements"
+        - "totalaudios"
+        - "totalvideos"
+      properties:
+        allitemcount:
+          type: integer
+          description: Total number of elements that are having issues.
+        pageurl:
+          type: string
+          description: The URL that has been tested.
+        time:
+          type: number
+          description: Time taken to perform the testing.
+        totalelements:
+          type: integer
+          description: Total elements that has been tested.
+        totalaudios:
+          type: integer
+          description: Total audios that are present on the webpage.
+        totalvideos:
+          type: integer
+          description: Total videos that are present on the webpage.
+
+    crest_success_response:
+      type: object
+      description: A JSON object that contains information of Crest's success response.
+      required:
+        - categories
+        - statistics
+        - status
+      properties:
+        categories:
+          $ref: '#/components/schemas/crest_categories'
+        statistics:
+          $ref: '#/components/schemas/crest_statistics'
+        status:
+          $ref: '#/components/schemas/success_status'
+
+
+tags:
+- name: "Perceivable"
+  description: Information and user interface components must be presentable to users in ways they can perceive.
+- name: "Operable"
+  description: User interface components and navigation must be operable.
+- name: "Understandable"
+  description: Information and the operation of user interface must be understandable.
+- name: "Robust"
+  description: Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive technologies.
+- name: "TestMePage"
+  description: TestMePage is to test any functionality on this page to ensure the right working of APIs.
+- name: "Test All"
+  description: APIs that can test multiple functionalities in a single API call.
+
+paths:
+  /crest/api/all:
+    post:
+      operationId: all
+      tags:
+        - "Test All"
+      summary: "Single API to test all functionalities provided by Crest"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/request_body'
+              example:
+                url: "http://www.abc.com"
+                reporttype: 3
+        required: true
+      responses:
+        '200':
+          description: The Success response contains `categories` that aggregate all the Error and Alert related issues.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/crest_success_response'
+                example:
+                  categories: 
+                    alert:
+                      count: 1
+                      description: "Alerts"
+                      items:
+                        cr_heading_unrelated: 
+                          count: 1
+                          description: "Possibly unrelated heading"
+                          id: "cr_heading_unrelated"
+                          level: "AA"
+                          xpaths: ['/html[1]/body[1]/div[1]/a[1]']
+                    error:
+                      count: 4
+                      description: "Errors"
+                      items:
+                        cr_focus_low: 
+                          count: 1
+                          description: "Low contrast on Focus"
+                          id: "cr_focus_low"
+                          level: "AA"
+                          xpaths: ['/html[1]/body[1]/div[1]/a[1]']
+                        cr_focus_missing: 
+                          count: 1
+                          description: "Focus not visible"
+                          id: "cr_focus_missing"
+                          level: "AA"
+                          xpaths: ['/html[1]/body[1]/div[1]/a[1]']
+                        cr_captions_missing: 
+                          count: 1
+                          description: "Captions missing"
+                          id: "cr_captions_missing"
+                          level: "A"
+                        cr_transcript_missing: 
+                          count: 1
+                          description: "Podcast transcript missing"
+                          id: "cr_transcript_missing"
+                          level: "A"
+                  statistics:
+                    allitemcount: 5
+                    pageurl: "http://www.abc.com"
+                    time: 5.13
+                    totalelements: 60
+                    totalaudios: 1
+                    totalvideos: 1
+                  status:
+                    httpstatuscode: 200
+                    success: "True"
+        '400':
+          description: Bad Request, missing something, or the request body wasn't correct.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/failure_response'
+                example:
+                  status: 
+                    error: Failed with exception [WebDriverException]
+                    success: "false"
+      description: |
+          Crest can perform multiple tests in a single API call. It checks WCAG violations on a webpage and provides XPaths/CSS selectors of the violated elements. It currently supports the following functionalities and their detailed information can be found on their documentation page. 
+
+          1. [Keyboard Focus Indicator](../../perceivable/keyboard-focus-indicator/post/)
+
+          2. [Closed Captioning and Transcript](../../perceivable/cc-transcript/post/)
+
+          3. [Heading Analysis](../../operable/heading-analysis/post/)
+
+
+  /crest/api/perceivable/keyboard-focus-indicator:
+    post:
+      operationId: keyboardFocusIndicator
+      tags:
+      - "Perceivable"
+      summary: "This API tests all focusable elements on a webpage by comparing the color contrast between the keyboard focus indicator and the component itself in its active vs. inactive states."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/request_body'
+              example:
+                url: "http://www.abc.com"
+                reporttype: 3
+        required: true
+      responses:
+        '200':
+          description: The Success response contains `categories` that aggregate all the Error and Alert related issues.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/focus_indicator_success_response'
+                example:
+                  categories: 
+                    error:
+                      count: 2
+                      description: "Errors"
+                      items:
+                        cr_focus_low: 
+                          count: 1
+                          description: "Low contrast on Focus"
+                          id: "cr_focus_low"
+                          level: "AA"
+                          xpaths: ['/html[1]/body[1]/div[1]/a[1]']
+                        cr_focus_missing: 
+                          count: 1
+                          description: "Focus not visible"
+                          id: "cr_focus_missing"
+                          level: "AA"
+                          xpaths: ['/html[1]/body[1]/div[1]/a[2]']
+                  statistics:
+                    allitemcount: 2
+                    pageurl: "http://www.abc.com"
+                    time: 5.13
+                    totalelements: 60
+                  status:
+                    httpstatuscode: 200
+                    success: "True"
+        '400':
+          description: Bad Request, missing something, or the request body wasn't correct.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/failure_response'
+                example:
+                  status: 
+                    error: Failed with exception [WebDriverException]
+                    success: "false"
+
+      description: |
+        
+        This API tests all focusable elements on a webpage by comparing the color contrast between the keyboard focus indicator and the component itself in its active vs. inactive states. It covers the following Issue IDs:
+
+        **Issue ID: cr_focus_low**
+
+        *Definition*
+
+        When active interface controls (buttons, links, forms, page tabs, etc.) receive keyboard focus, the visual focus indicator does not meet the required color contrast ratio of at least 3:1.
+
+        *User Impact*
+
+        Low-vision users may have trouble seeing the visual keyboard focus indicator and may not be able to orient themselves on the page to effectively navigate content. Colorblind users may also be affected. 
+
+        *Recommendation*
+
+        Ensure that the visual keyboard focus indicator provides a sufficient color contrast ratio of at least 3:1 with adjacent colors (background and/or the control colors). Possible solutions include: using the CSS outline property to provide an outline around the focused element, and inverting the foreground and background colors.
+
+        *Success Criterion*
+
+        1.4.11 Non-text Contrast (Level AA)
+
+        *Related Success Criteria (if applicable):*
+
+        2.4.7 Focus Visible (Level AA)
+
+
+        More details can be found at [Understanding Success Criterion 1.4.11](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html).
+
+        **Issue ID: cr_focus_missing**
+
+        *Definition*
+
+        There is no visual keyboard focus indication when using TAB or SHIFT+TAB, and/or arrow keys (when applicable) to navigate through the controls (buttons, links, forms, page tabs, etc.) of the website.
+
+        *User Impact*
+
+        Sighted keyboard-only users are not able to orient themselves on the page and will not be able to effectively navigate content.
+
+        *Recommendation*
+
+        All interactive content must provide a visual indication of keyboard focus. Focus can be provided in a number of ways including change background, invert colors, border, outline, and other visual methods. Avoid the use of the "outline: none" CSS property.
+
+        *Success Criterion*
+
+        2.4.7 Focus Visible (Level AA)
+
+        *Related Success Criteria (if applicable):*
+
+        1.4.11 Non-text Contrast (Level AA)
+
+
+        More details can be found at [Understanding Success Criterion 2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html).
+  
+  
+  
+  /crest/api/perceivable/cc-transcript:
+    post:
+      operationId: ccAndTranscript
+      tags:
+      - "Perceivable"
+      summary: "This API’s task is to check for missing captions or transcripts associated with embedded videos and audio files on a webpage."
+      requestBody:
+        content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/request_body'
+                example:
+                  url: "http://www.abc.com"
+                  reporttype: 3
+        required: true
+      responses:
+        '200':
+          description: The Success response contains `categories` that aggregate all the Error and Alert related issues.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/cc_transcript_success_response'
+                example:
+                  categories: 
+                    error:
+                      count: 2
+                      description: "Errors"
+                      items:
+                        cr_captions_missing: 
+                          count: 1
+                          description: "Captions missing"
+                          id: "cr_captions_missing"
+                          level: "A"
+                        cr_transcript_missing: 
+                          count: 1
+                          description: "Podcast transcript missing"
+                          id: "cr_transcript_missing"
+                          level: "A"
+                  statistics:
+                    allitemcount: 2
+                    pageurl: "http://www.abc.com"
+                    time: 5.13
+                    totalelements: 2
+                    totalaudios: 1
+                    totalvideos: 1
+                  status:
+                    httpstatuscode: 200
+                    success: "True"
+        '400':
+          description: Bad Request, missing something, or the request body wasn't correct.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/failure_response'
+                example:
+                  status: 
+                    error: Failed with exception [WebDriverException]
+                    success: "false"
+      description: |
+        
+        This API’s task is to check for missing captions or transcripts associated with embedded videos and audio files on a webpage. It covers the following Issue IDs:
+
+        **Issue ID: cr_transcript_missing**
+
+        *Definition*
+
+        Audio-only content such as podcasts and audio recordings of speeches and press conferences are not made available by transcript.
+
+        *User Impact*
+
+        When transcripts are provided for audio-only content, people who are deaf or deaf-blind will have access to the information visually or through the use of electronic braille.
+
+        *Recommendation*
+
+        Provide a transcript for audio-only content.
+
+        *Success Criterion*
+
+        1.2.1 Prerecorded Audio-only and Video-only (Level A)
+
+        *Related Success Criteria (if applicable):*
+
+        1.2.3 Audio Description or Media Alternative (Prerecorded) (Level A)
+
+
+        More details can be found at [Understanding Success Criterion 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html). 
+
+
+        **Issue ID: cr_captions_missing**
+
+        *Definition*
+
+        Synchronized captions are not provided for video or other multimedia content that contains audio. 
+
+        *User Impact*
+
+        Users who are deaf or hard of hearing will not have access to important information conveyed in audio. Captions also provide an enhanced experience for users with cognitive differences such as ADHD or learning disabilities. Additionally, captions are useful in certain situations such as environments with loud background noise or situations where sound is not allowed (e.g. the library without headphones, or near a sleeping baby).
+
+        *Recommendation*
+
+        Provide captions for all important audio information in video and multimedia content.
+
+        *Success Criterion*
+
+        1.2.2 Captions (Prerecorded) (Level A)
+
+        *Related Success Criteria (if applicable):*
+
+        2.2.2 Pause, Stop, Hide (Level A) <br />
+        1.1.1 Non-text Content (Level A)
+
+        More details can be found at [Understanding Success Criterion 1.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html).
+  
+  /crest/api/operable/heading-analysis:
+    post:
+      operationId: headingAnalysis
+      tags:
+      - "Operable"
+      summary: "This API uses machine learning models and inspects whether the text below each heading is related to the heading content or not."
+      requestBody:
+        content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/request_body'
+                example:
+                  url: "http://www.abc.com"
+                  reporttype: 3
+        required: true
+      responses:
+        '200':
+          description: The Success response contains `categories` that aggregate all the Error and Alert related issues.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/heading_analysis_success_response'
+                example:
+                  categories: 
+                    alert:
+                      count: 1
+                      description: "Alerts"
+                      items:
+                        cr_heading_unrelated: 
+                          count: 1
+                          description: "Possibly unrelated heading"
+                          id: "cr_heading_unrelated"
+                          level: "AA"
+                          xpaths: ['/html[1]/body[1]/div[1]/a[1]']
+                  statistics:
+                    allitemcount: 1
+                    pageurl: "http://www.abc.com"
+                    time: 5.13
+                    totalelements: 60
+                  status:
+                    httpstatuscode: 200
+                    success: "True"
+        '400':
+          description: Bad Request, missing something, or the request body wasn't correct.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/failure_response'
+                example:
+                  status: 
+                    error: Failed with exception [WebDriverException]
+                    success: "false"
+      description: |
+        
+        This API uses machine learning models and inspects whether the text below each heading is related to the heading content or not. It covers the following Issue IDs:
+        
+        **Issue ID: cr_heading_unrelated**
+
+        *Definition*
+
+        The content immediately following a heading identified by machine learning is possibly unrelated to the topic or purpose. 
+
+        *User Impact*
+
+        Blind screen reader users rely on headings to navigate page content. When headings are misleading and do not reflect the topic or purpose, users can become disoriented and have difficulty navigating the page. Users with learning differences may also have difficulty understanding page content when headings are unrelated to content.
+
+        *Recommendation*
+
+        Provide clear and descriptive headings that accurately describe the immediatley following content.
+
+        *Success Criterion*
+
+        2.4.6 Headings and Labels (Level AA)
+
+        *Related Success Criteria (if applicable):*
+
+        1.3.1 Info and Relationships (Level A)
+
+
+        More details can be found at [Understanding Success Criterion 2.4.6](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html).
+
+
+  /crest/testMePage:
+    get:
+      operationId: getTestMePage
+      tags:
+      - "TestMePage"
+      summary: "Test any API on the TestMePage"
+      responses:
+        '200':
+          description: The Success Response that returns an HTML page.
+          content:
+            text/html:
+              schema:
+                type: string
+              example:
+                '<html lang="en"> <head> <meta charset="UTF-8"> <title>TestMePage</title>...</html>'
+      description: |
+        Test the Crest APIs on our testMePage:
+
+        1. Use the following URL in the request body of an API call.
+        ```python
+        "http://{server-ip}:{port}/crest/testMePage"
+        ```
+
+        2. Please provide correct "server-ip" and "port" on which the server is running.
+
+externalDocs:
+  description: "Find out more about Crest"
+  url: "https://vmware.github.io/crest/"
