@@ -1,7 +1,9 @@
-<!-- Copyright 2020-2021 VMware, Inc.
+<!-- Copyright 2020 VMware, Inc.
 SPDX-License-Identifier: MIT -->
 Contributing to Crest
 =======================
+
+The Crest project team welcomes contributions from the community. Before you start working with Crest, please read our [Developer Certificate of Origin](https://cla.vmware.com/dco). All contributions to this repository must be signed as described on that page. Your signature certifies that you wrote the patch or have the right to pass it on as an open-source patch.
 
 Project Structure
 -----------------

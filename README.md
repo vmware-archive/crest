@@ -1,4 +1,4 @@
-<!-- Copyright 2020-2021 VMware, Inc.
+<!-- Copyright 2020 VMware, Inc.
 SPDX-License-Identifier: MIT -->
 
 <p>
@@ -140,7 +140,9 @@ For the Crest community, feel free to join our <a alt= "Link to join crest slack
 
 ### Contributing
 
-The Crest project team welcomes contributions from the community. If you wish to contribute code, please look at our <a alt="link to contribution markdown file" title="Amit Garg" href="https://github.com/vmware/crest/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> file.
+The Crest project team welcomes contributions from the community. Before you start working with Crest, please read our [Developer Certificate of Origin](https://cla.vmware.com/dco). All contributions to this repository must be signed as described on that page. Your signature certifies that you wrote the patch or have the right to pass it on as an open-source patch.
+
+If you wish to contribute code, please look at our <a alt="link to contribution markdown file" title="Amit Garg" href="https://github.com/vmware/crest/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> file.
 
 ### License
 
