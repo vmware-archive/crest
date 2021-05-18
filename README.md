@@ -83,7 +83,7 @@ conda activate crest
 
 7. Once all the required libraries are installed, go to 'src/crest' folder and run the below command in your terminal/prompt shell. 
 ```python
-FLASK_APP=server.py FLASK_ENV=development flask run --port 3000
+FLASK_APP=server.py FLASK_ENV=development flask run --port 3000 --host 0.0.0.0
 ```
 
 ##### Using Docker
