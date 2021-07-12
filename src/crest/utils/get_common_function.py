@@ -62,7 +62,7 @@ def get_driver():
 
 def check_url():
     try:
-        response = requests.get(self.url)
+        response = requests.get(self.url, verify=False)
         logging.debug("URL is valid and exists on the internet")
         return True
     except requests.ConnectionError as exception:
