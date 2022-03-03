@@ -32,6 +32,8 @@ Currently supports:
 - Closed Captioning and Transcript
 - Heading Analysis
 
+Note: Some websites might have permission issues to access their session storage.
+
 ## Table of contents
 
 
