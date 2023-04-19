@@ -1,6 +1,6 @@
 # Copyright 2020-2021 VMware, Inc.
 # SPDX-License-Identifier: MIT
-selenium>=3.141.0
+selenium>=3.141.0,<4.3
 requests>=2.24.0
 urllib3>=1.25.9
 webdriver_manager
@@ -9,7 +9,7 @@ pytesseract>=0.3.6
 bs4>=0.0.1
 nltk>=3.5
 transformers>=4.5.0
-pandas>=1.0.5
+pandas>=1.0.5,<2.0
 numpy>=1.19.0
 lxml>=4.5.2
 flask>=1.1.2
