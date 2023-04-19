@@ -8,11 +8,12 @@ FROM python:3.8
 COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt
-RUN curl https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip -o /usr/local/bin/chromedriver
-RUN chmod +x /usr/local/bin/chromedriver
-# RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
-# RUN apt-get update
-# RUN yes | apt install ./google-chrome-stable_current_amd64.deb 
+RUN curl "https://chromedriver.storage.googleapis.com/$(curl https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip" -o /usr/local/bin/chromedriver \
+    && chmod +x /usr/local/bin/chromedriver \
+    && curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o google-chrome-stable_current_amd64.deb \
+    && apt update \
+    && apt --assume-yes install ./google-chrome-stable_current_amd64.deb \
+    && rm -r /var/lib/apt/lists
 
 COPY src/ /usr/src/app/
 
