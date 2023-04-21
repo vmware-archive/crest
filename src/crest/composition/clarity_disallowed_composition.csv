@@ -1,0 +1,45 @@
+Column A is the internal component,Accordion-Accessibility,Alert-Accessibility,Badge-Accessibility,Button-Accessibility,Button Group-Accessibility,Card-Accessibility,Checkbox,Combo Box-Accessibility,Control,Datagrid-Accessibility,Datalist-Accessibility,Date Picker-Accessibility,Dropdown-Accessibility,Form,Form Group-Accessibility,Grid,Header-Accessibility,Icon Button-Accessibility,Inline Button-Accessibility,Input-Accessibility,Input Group,Label-Accessibility,List-Accessibility,Modal-Accessibility,Password-Accessibility,Progress Bar-Accessibility,Radio-Accessibility,Range / Slider-Accessibility,Select-Accessibility,Sidenav - Deprecated-Accessibility,Signpost-Accessibility,Spinner-Accessibility,Stack View-Accessibility,Stepper-Accessibility,Tab-Accessibility,Table-Accessibility,Tag-Accessibility,Textarea-Accessibility,Timeline-Accessibility,Toggle-Accessibility,Tooltip-Accessibility,Tree View-Accessibility,Vertical Nav-Accessibility,Wizard-Accessibility
+Accordion,y,n,n,n,n,y,n,n,n,n,n,n,n,y,y,x,n,n,n,n,n,n,n,y,n,n,n,n,n,y,n,n,n,m or n,n,n,n,n,m or n,n,n,n ,n,y
+Alert,y,n,n,n,n,y,n,n,n,n,n,n,n,y,y,x,n,n,n,n,n,n,n,y,n,n,n,n,n,y,n,n,n,y,n,n,n,n,y,n,n,n ,n,y
+Badge,y,y,n,y,n,y,n,n,n,y,y,n,y,y,y,x,y,n,y,n,y,y,y,y,n,n,y,n,n,y,m,n,y,y,y,y,y,y,y,y,n,y,y,y
+Button,y,y,n,n,n,y,n,n,n,m,n,n,n,y,y,x,y,n,n,n,n,n,n,y,n,n,n,n,n,n,m,n,n,y,n,n,n,n,y,n,n,n ,y,y
+Button Group,y,y,n,n,n,y,n,n,n,n,n,n,n,y,y,x,y,n,n,n,n,n,n,y,n,n,n,n,n,n,m,n,n,y,n,n,,n,y,n,n,n ,n,y
+Card,y,n,n,n,n,m,n,n,n,n,n,n,n,y,y,x,n,n,n,n,n,n,n,y,n,n,n,n,n,n,n,n,n,y,n,n,n,n,y,n,n,n ,n,y
+Checkbox,y,y,n,n,n,y,n,m,n,y,n,n,n,y,y,x,y,n,n,n,n,n,n,y,n,n,n,n,n,n,n,n,n,y,n,n,n,n,y,n,n,n ,y,y
+Combo Box,y,n,n,n,n,y,n,n,n,n,n,n,n,y,y,x,y,n,n,n,n,n,n,y,n,n,n,n,n,n,n,n,n,y,n,n,n,n,m,n,n,n ,n,y
+Control,,x,x,x,x,x,x,x,x,,n,n,y,y,y,x,y,n,n,n,y,n,n,y,n,n,n,n,n,n,,n,n,y,n,n,n,n,y,n,n,n ,n,y
+Datagrid,n,n,n,n,n,n,n,n,x,n,n,n,n,x,y,x,n,n,n,n,n,n,n,y,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n ,n,n
+Datalist,y,n,n,n,n,y,n,n,x,m,n,n,n,y,y,x,m,n,n,n,y,n,n,y,n,n,n,n,n,n,n,n,n,y,n,n,n,n,y,n,n,n ,y,y
+Date Picker,y,n,n,n,n,y,n,n,x,y,n,n,m,y,y,x,y,n,n,n,y,n,n,y,n,n,n,n,n,n,n,n,n,y,n,n,n,n,y,n,n,n ,n,y
+Dropdown,y,y,n,n,n,y,n,n,x,y,n,n,n,y,y,x,y,n,n,n,y,n,n,y,n,n,n,n,n,y,n,n,n,y,n,n,n,n,y,n,n,n ,y,y
+Form,,x,x,x,x,x,x,x,x,x,x,x,x,x,,x,n,n,n,n,n,n,n,y,n,n,n,n,n,n,,n,n,y,n,n,n,n,y,n,n,n ,n,y
+Form Group,y,n,n,n,n,y,n,n,x,n,n,n,n,x,y,x,n,n,n,n,n,n,n,y,n,n,n,n,n,n,n,n,n,y,n,n,n,n,y,n,n,n ,n,y
+Grid (Flex Box),y,n,n,n,n,y,n,n,x,y,n,y,n,x,y,y,n,,n,n,,n,n,y,n,n,n,n,n,,n,n,y,y,n,n,n,n,n,n,n,n ,n,y
+Header,n,n,n,n,n,n,n,n,x,n,n,n,n,x,n,y,n,y,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n ,n,n
+Icon Button,y,y,n,n,y,y,n,n,x,n,n,y,n,x,y,y,y,n,n,n,n,n,n,y,y,n,n,n,n,n,n,n,n,y,n,n,n,n,y,n,n,n ,n,y
+Inline Button,y,y,n,n,y,y,n,n,x,n,n,y,n,x,y,y,y,n,n,n,n,n,n,y,y,n,n,n,n,n,n,n,n,y,n,n,n,n,y,n,n,n ,n,y
+Input,y,n,n,n,n,y,n,n,x,y,n,n,n,x,y,x,n,n,n,n,n,n,n,y,n,n,n,n,n,n,n,n,n,y,n,n,n,n,y,n,n,n ,n,y
+Input Group,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,n,n,y,n,n,n,n,n,n,,n,n,y,n,n,,n,y,n,n,n ,n,y
+Label,y,y,y,n,n,y,n,y,x,y,y,n,y,x,y,y,y,y,n,y,x,n,y,y,n,n,n,n,n,y,n,n,y,y,y,y,n,n,y,y,n,y,y,y
+List,y,y,n,n,n,y,n,n,x,y,n,n,n,x,y,y,n,n,n,n,x,n,y,y,n,n,n,n,n,n,y,n,y,y,n,y,n,n,y,n,n,n ,n,y
+Modal,n,n,n,n,n,n,n,n,x,n,n,n,n,x,n,y,n,n,n,n,x,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n ,n,n
+Password,m,y,n,n,n,y,n,n,x,n,n,n,n,x,y,y,n,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,y,y,n,y,n,n,y,n,n,n ,n,y
+Progress Bar,y,y,n,n,n,y,n,n,x,y,n,n,n,x,y,y,n,y,n,n,x,n,y,y,n,n,n,n,n,n,n,n,y,y,n,y,n,n,y,n,n,n ,y,y
+Radio,y,y,n,n,n,y,n,n,x,y,n,n,n,x,y,y,n,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,y,y,n,n,n,n,y,n,n,n ,n,y
+Range,y,y,n,n,n,y,n,n,x,n,n,n,n,x,y,y,y,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,y,y,n,n,n,n,y,n,n,n ,n,y
+Select,y,y,n,n,n,y,n,n,x,y,n,n,n,x,y,y,y,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,y,y,n,n,n,n,y,n,n,n ,n,y
+Sidenav - Deprecated,n,n,n,n,n,n,n,n,x,n,n,n,n,x,n,y,n,n,x,n,x,n,n,m,n,n,n,n,n,n,,n,n,n,n,n,,n,n,n,n,n ,n,n
+Signpost,y,y,n,n,n,y,n,n,x,y,n,n,n,x,y,y,y,n,n,n,x,y,y,y,n,n,n,n,n,y,n,n,y,y,y,y,n,n,y,n,n,n ,y,y
+Spinner,y,y,m,n,n,y,n,n,x,y,n,y,y,x,y,y,y,y,n,n,x,n,y,y,n,y,n,n,y,y,n,n,y,y,y,y,n,n,y,n,n,y,y,y
+Stack View,y,n,n,n,n,y,n,n,x,n,n,n,n,x,y,y,n,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,n,n,n,n,n,n,y,n,n,n ,n,y
+Stepper,y,n,n,n,n,y,n,n,x,n,n,n,n,x,y,y,n,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,n,n,n,n,n,n,y,n,n,n ,n,y
+Tab,y,n,n,n,n,y,n,n,x,n,n,n,n,x,y,y,y,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,n,y,y,n,n,n,n,n,n,n ,y,y
+Table,y,n,n,n,n,y,n,n,x,n,n,n,n,x,y,y,n,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,n,y,y,y,n,n,y,n,n,n ,n,y
+Tag,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,n,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,n,y,y,y,n,y,y,y
+Textarea,y,n,n,n,n,y,n,n,x,y,n,n,n,x,y,y,n,n,n,n,x,n,y,y,n,n,n,n,n,y,n,n,y,y,n,n,x,n,y,n,n,n ,n,y
+Timeline,y,n,n,n,n,y,n,n,x,n,n,n,n,x,n,y,n,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,n,y,n,n,x,n,n,n,n,n ,n,y
+Toggle,y,y,n,n,n,y,n,n,x,y,n,n,n,x,y,y,y,n,n,n,x,n,y,y,n,n,n,n,n,y,n,n,y,y,y,y,x,n,y,n,n,n ,y,y
+Tooltip,n,n,n,n,n,n,n,n,x,n,n,n,n,x,n,y,n,n,n,n,x,n,n,n,n,n,n,n,n,y,n,n,n,n,n,n,n,n,n,n,n,n ,n,n
+Tree View,y,n,n,n,n,y,n,n,x,n,n,n,n,x,y,y,n,n,n,n,x,n,n,y,n,n,n,n,n,n,n,n,n,y,n,y,x,n,n,n,n,y,n,y
+Vertical Nav,n,n,n,n,n,n,n,n,x,n,n,n,n,x,n,y,n,n,n,n,x,n,n,m,n,n,n,n,n,n,n,n,n,n,y,n,x,n,n,n,n,n ,n,n
+Wizard,n,n,n,n,n,n,n,n,x,n,n,n,n,x,n,y,n,n,n,n,x,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,x,n,n,n,n,n ,n,n

@@ -21,6 +21,7 @@ from PIL import Image
 from pytesseract import image_to_string
 from io import BytesIO
 from difflib import SequenceMatcher
+from crest import utils
 from crest.utils.get_common_function import *
 
 class AudioVideo:
@@ -273,63 +274,6 @@ class AudioVideo:
             "cc elements count reached to : {}".format(len(self.list_of_cc_elems))
         )
 
-    def get_xpath(self, driver, element):
-        path = driver.execute_script("return absoluteXPath(arguments[0]);", element)
-        return path
-
-    def absolute_xpath_fn(self):
-        return self.driver.execute_script(
-            "function absoluteXPath(element) {"
-            + "var comp, comps = [];"
-            + "var parent = null;"
-            + "var xpath = '';"
-            + "var getPos = function(element) {"
-            + "var position = 1, curNode;"
-            + "if (element.nodeType == Node.ATTRIBUTE_NODE) {"
-            + "return null;"
-            + "}"
-            + "for (curNode = element.previousSibling; curNode; curNode = curNode.previousSibling){"
-            + "if (curNode.nodeName == element.nodeName) {"
-            + "++position;"
-            + "}"
-            + "}"
-            + "return position;"
-            + "};"
-            + "if (element instanceof Document) {"
-            + "return '/';"
-            + "}"
-            + "for (; element && !(element instanceof Document); element = element.nodeType == Node.ATTRIBUTE_NODE ? element.ownerElement : element.parentNode) {"
-            + "comp = comps[comps.length] = {};"
-            + "switch (element.nodeType) {"
-            + "case Node.TEXT_NODE:"
-            + "comp.name = 'text()';"
-            + "break;"
-            + "case Node.ATTRIBUTE_NODE:"
-            + "comp.name = '@' + element.nodeName;"
-            + "break;"
-            + "case Node.PROCESSING_INSTRUCTION_NODE:"
-            + "comp.name = 'processing-instruction()';"
-            + "break;"
-            + "case Node.COMMENT_NODE:"
-            + "comp.name = 'comment()';"
-            + "break;"
-            + "case Node.ELEMENT_NODE:"
-            + "comp.name = element.nodeName;"
-            + "break;"
-            + "}"
-            + "comp.position = getPos(element);"
-            + "}"
-            + "for (var i = comps.length - 1; i >= 0; i--) {"
-            + "comp = comps[i];"
-            + "xpath += '/' + comp.name.toLowerCase();"
-            + "if (comp.position !== null) {"
-            + "xpath += '[' + comp.position + ']';"
-            + "}"
-            + "}"
-            + "return xpath;"
-            + "}"
-        )
-
     def init_script(self):
         self.domain_names = self.get_ads_domain_names()
         self.driver.execute_script(
@@ -342,7 +286,7 @@ class AudioVideo:
             + "return true;"
             + "}"
         )
-        self.absolute_xpath_fn()
+        utils.define_absolute_xpath_fn(self.driver)
 
     def hide_elem(self, driver, elem):
         try:
