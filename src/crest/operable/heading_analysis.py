@@ -1,4 +1,4 @@
-# Copyright 2020-2021 VMware, Inc.
+# Copyright 2020-2023 VMware, Inc.
 # SPDX-License-Identifier: MIT
 import time
 import webbrowser
@@ -15,6 +15,7 @@ from crest.config import *
 import pandas as pd
 import numpy as np
 from lxml import etree
+import urllib.parse
 from urllib.request import urlopen
 from crest.utils.get_common_function import *
 import os
@@ -220,9 +221,15 @@ class HeadingContent:
         return dataset[np.array(predictions) == 0]
 
     def get_heading_elems(self):
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36', "Upgrade-Insecure-Requests": "1","DNT": "1","Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Accept-Language": "en-US,en;q=0.5","Accept-Encoding": "gzip, deflate"}
-        resp = requests.get(self.url, verify=False, headers=headers)
-        soup = BeautifulSoup(resp.text, "html.parser")
+        parsed_url = urllib.parse.urlparse(self.url)
+        if parsed_url.scheme == "file":
+            with open(parsed_url.path, "rt") as f:
+                text = f.read()
+        else:
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36', "Upgrade-Insecure-Requests": "1","DNT": "1","Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Accept-Language": "en-US,en;q=0.5","Accept-Encoding": "gzip, deflate"}
+            resp = requests.get(self.url, verify=False, headers=headers)
+            text = resp.text
+        soup = BeautifulSoup(text, "html.parser")
         self.remove_comments(soup)
         return soup.find_all(re.compile("^h[1-6]$"))
 
@@ -344,6 +351,6 @@ class HeadingContent:
             response = remove_category_add_param(response)
             return response, success_status
         except Exception as e:
-            logging.error(e)
+            logging.exception("error in HeadingContent.main()")
             response['status']={'success':"False", 'error':"Failed with exception [%s]" % type(e).__name__}
             return response, 400

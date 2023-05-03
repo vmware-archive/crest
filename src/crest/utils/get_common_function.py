@@ -1,4 +1,4 @@
-# Copyright 2020-2021 VMware, Inc.
+# Copyright 2020-2023 VMware, Inc.
 # SPDX-License-Identifier: MIT
 import logging
 import traceback
@@ -8,9 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
 def to_valid_url(url):
-    if 'http' not in url:
-        if 'www.' not in url:
-            url = 'www.'+url
+    if '://' not in url:
         url = 'http://'+url
     return url 
 
