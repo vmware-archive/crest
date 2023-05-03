@@ -182,8 +182,8 @@ class HeadingContent:
         return heading_text, re.sub(" +", " ", " ".join(texts)).strip()
 
     def get_image_video_alt_text(self, element):
-        imgs = element.findAll("img")
-        videos = element.findAll("video")
+        imgs = element.find_all("img")
+        videos = element.find_all("video")
         text = []
         if imgs is not None:
             for img in imgs:
@@ -249,7 +249,7 @@ class HeadingContent:
         return "/%s" % "/".join(components)
 
     def remove_comments(self, element):
-        for element in element.findAll(text=lambda text: isinstance(text, Comment)):
+        for element in element.find_all(string=lambda text: isinstance(text, Comment)):
             element.extract()
 
     def is_webpage_testable(self, xpaths):
@@ -309,7 +309,7 @@ class HeadingContent:
             if dataset.shape[0] != 0:
                 dataset = self.entailment_task(dataset)
             if dataset_with_null.shape[0] != 0:
-                dataset = dataset.append(dataset_with_null, ignore_index=True)
+                dataset = pd.concat([dataset, dataset_with_null], ignore_index=True)
             dataset.drop_duplicates(subset=["heading_text"], inplace=True)
             for heading, heading_text, content in dataset.values:
                 if self.word_matching_check(heading_text, content):

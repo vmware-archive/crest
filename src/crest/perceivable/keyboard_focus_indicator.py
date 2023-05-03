@@ -143,7 +143,7 @@ class FocusIndicator:
             logging.debug("Inside check box shadow")
             param = "box-shadow"
             text = new[param]
-            pattern = "\((.*?)\)"
+            pattern = r"\((.*?)\)"
             if self.is_diff(old, new, [param]) and text is not None and text != "":
                 bg_color = new["background-color"]
                 bg_tuple, _ = self.extract_color(bg_color, bg_color)

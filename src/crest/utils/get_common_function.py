@@ -6,6 +6,8 @@ import requests
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+
 
 def to_valid_url(url):
     if '://' not in url:
@@ -53,7 +55,7 @@ def get_driver():
 
     chrome_options.add_experimental_option("prefs", prefs)
     driver = webdriver.Chrome(
-        ChromeDriverManager().install(), options=chrome_options
+        service=Service(ChromeDriverManager().install()), options=chrome_options
     )
     # driver = webdriver.Chrome(options=chrome_options
     return driver
