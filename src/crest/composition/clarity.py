@@ -24,7 +24,6 @@ class ClarityComposition(operation.Operation):
     """
 
     DISALLOWED_COMPOSITIONS_CSV_FILENAME = "clarity_disallowed_composition.csv"
-    SKIP_COMPONENTS = {"CONTROL"}
 
     _COMPONENT_NAME_SPLIT_RE = re.compile("[-/(]")
     _disallowed_compositions: Dict[
@@ -95,16 +94,11 @@ class ClarityComposition(operation.Operation):
             outer_containers = [cls._clean_component_name(i) for i in headers[1:]]
             disallowed_compositions_table = {}
             for i in outer_containers:
-                if i not in cls.SKIP_COMPONENTS:
-                    disallowed_compositions_table[i] = set()
+                disallowed_compositions_table[i] = set()
             for row in csv_reader:
                 inner = cls._clean_component_name(row[0])
                 for outer, decision in zip(outer_containers, row[1:]):
-                    if (
-                        decision == "n"
-                        and outer not in cls.SKIP_COMPONENTS
-                        and inner not in cls.SKIP_COMPONENTS
-                    ):
+                    if decision.lower().startswith("n"):
                         disallowed_compositions_table[outer].add(inner)
         cls._disallowed_compositions = cls._convert_disallowed_composition_table(
             disallowed_compositions_table

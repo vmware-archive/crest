@@ -42,13 +42,10 @@ class Components(enum.Enum):
         ),
     )
     COMBO_BOX = Component("combo box", ("clr-combobox",))
-    DATAGRID = Component("datagrid", ("clr-datagrid",))
     DATALIST = Component("datalist", ("cds-datalist", "clr-datalist-container"))
     DATE_PICKER = Component("date picker", ("clr-date-container",))
     DROPDOWN = Component("dropdown", ("clr-dropdown", "div.dropdown"))
-    FORM = Component("form", ("form[cds-layout]", "form[clrForm]"))
     FORM_GROUP = Component("form", ("cds-form-group",))
-    GRID = Component("grid", ("div.clr-row",))
     HEADER = Component("header", ("header",))
     ICON_BUTTON = Component("icon-button", ("button.btn-icon", "cds-icon-button"))
     INLINE_BUTTON = Component("inline-button", ("cds-inline-button",))
@@ -62,7 +59,6 @@ class Components(enum.Enum):
             "input[clrInput]",
         ),
     )
-    INPUT_GROUP = Component("input-group", ("cds-input-group",))
     LABEL = Component("label", ("span.label", "a.label"))
     LIST = Component(
         "list",
@@ -111,14 +107,12 @@ class Components(enum.Enum):
             "select[clrSelect]",
         ),
     )
-    SIDENAV = Component("sidenav", ("nav.sidenav",))
     SIGNPOST = Component("signpost", ("clr-signpost",))
     SPINNER = Component("spinner", ("span.spinner", "clr-spinner"))
     STACK_VIEW = Component("stack view", ("div.stack-view", "clr-stack-view"))
     STEPPER = Component("stepper", ("form[clrStepper]",))
     TAB = Component("tab", ("clr-tab", 'section[role="tabpanel"]'))
     TABLE = Component("table", ("table.table",))
-    TAG = Component("tag", ("cds-tag",))
     TEXTAREA = Component(
         "textarea",
         (
@@ -141,4 +135,3 @@ class Components(enum.Enum):
     TOOLTIP = Component("tooltip", ("a.tooltip", "clr-tooltip"))
     TREE_VIEW = Component("tree view", ("clr-tree",))
     VERTICAL_NAV = Component("vertical nav", ("clr-vertical-nav",))
-    WIZARD = Component("wizard", ("clr-wizard",))
