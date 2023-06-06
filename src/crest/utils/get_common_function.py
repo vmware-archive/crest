@@ -1,4 +1,4 @@
-# Copyright 2020-2021 VMware, Inc.
+# Copyright 2020-2023 VMware, Inc.
 # SPDX-License-Identifier: MIT
 import logging
 import traceback
@@ -6,11 +6,11 @@ import requests
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+
 
 def to_valid_url(url):
-    if 'http' not in url:
-        if 'www.' not in url:
-            url = 'www.'+url
+    if '://' not in url:
         url = 'http://'+url
     return url 
 
@@ -55,7 +55,7 @@ def get_driver():
 
     chrome_options.add_experimental_option("prefs", prefs)
     driver = webdriver.Chrome(
-        ChromeDriverManager().install(), options=chrome_options
+        service=Service(ChromeDriverManager().install()), options=chrome_options
     )
     # driver = webdriver.Chrome(options=chrome_options
     return driver

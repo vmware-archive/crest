@@ -1,4 +1,4 @@
-# Copyright 2020-2021 VMware, Inc.
+# Copyright 2020-2023 VMware, Inc.
 # SPDX-License-Identifier: MIT
 from selenium import webdriver
 import selenium.common.exceptions
@@ -54,7 +54,7 @@ class AudioVideo:
     def check_audio_player(self, driver, iframe_status, iframe_elem):
         logging.debug("check audio player")
         try:
-            elements = driver.find_elements_by_xpath("//audio")
+            elements = driver.find_elements(By.XPATH, "//audio")
             if elements is None or len(elements) == 0:
                 return False, None
             vElem = []
@@ -102,7 +102,7 @@ class AudioVideo:
     def check_video_player(self, iframe_status, iframe_elem):
         logging.debug("check video player")
         try:
-            elements = self.driver.find_elements_by_xpath("//video")
+            elements = self.driver.find_elements(By.XPATH, "//video")
             if elements is None or len(elements) == 0:
                 return False, None
             else:
@@ -164,7 +164,7 @@ class AudioVideo:
     def get_all_frames(self, driver):
         iframes_without_ads = []
         try:
-            iframes = driver.find_elements_by_xpath("//iframe")
+            iframes = driver.find_elements(By.XPATH, "//iframe")
             for iframe in iframes:
                 if self.is_advertisement(driver, iframe) is not True:
                     is_visible = driver.execute_script(
@@ -200,7 +200,7 @@ class AudioVideo:
                     logging.debug("Exception occured while clicking on the video")
 
                 self.get_all_button_tags(driver, iframe_status, iframe_elem)
-                tracks = element.find_element_by_tag_name("track")
+                tracks = element.find_element(By.TAG_NAME, "track")
                 if tracks is not None and (
                     tracks.get_attribute("kind") == "subtitles"
                     or tracks.get_attribute("kind") == "captions"

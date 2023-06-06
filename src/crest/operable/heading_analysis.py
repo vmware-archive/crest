@@ -1,4 +1,4 @@
-# Copyright 2020-2021 VMware, Inc.
+# Copyright 2020-2023 VMware, Inc.
 # SPDX-License-Identifier: MIT
 import time
 import webbrowser
@@ -15,6 +15,7 @@ from crest.config import *
 import pandas as pd
 import numpy as np
 from lxml import etree
+import urllib.parse
 from urllib.request import urlopen
 from crest.utils.get_common_function import *
 import os
@@ -181,8 +182,8 @@ class HeadingContent:
         return heading_text, re.sub(" +", " ", " ".join(texts)).strip()
 
     def get_image_video_alt_text(self, element):
-        imgs = element.findAll("img")
-        videos = element.findAll("video")
+        imgs = element.find_all("img")
+        videos = element.find_all("video")
         text = []
         if imgs is not None:
             for img in imgs:
@@ -220,9 +221,15 @@ class HeadingContent:
         return dataset[np.array(predictions) == 0]
 
     def get_heading_elems(self):
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36', "Upgrade-Insecure-Requests": "1","DNT": "1","Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Accept-Language": "en-US,en;q=0.5","Accept-Encoding": "gzip, deflate"}
-        resp = requests.get(self.url, verify=False, headers=headers)
-        soup = BeautifulSoup(resp.text, "html.parser")
+        parsed_url = urllib.parse.urlparse(self.url)
+        if parsed_url.scheme == "file":
+            with open(parsed_url.path, "rt") as f:
+                text = f.read()
+        else:
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36', "Upgrade-Insecure-Requests": "1","DNT": "1","Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Accept-Language": "en-US,en;q=0.5","Accept-Encoding": "gzip, deflate"}
+            resp = requests.get(self.url, verify=False, headers=headers)
+            text = resp.text
+        soup = BeautifulSoup(text, "html.parser")
         self.remove_comments(soup)
         return soup.find_all(re.compile("^h[1-6]$"))
 
@@ -242,7 +249,7 @@ class HeadingContent:
         return "/%s" % "/".join(components)
 
     def remove_comments(self, element):
-        for element in element.findAll(text=lambda text: isinstance(text, Comment)):
+        for element in element.find_all(string=lambda text: isinstance(text, Comment)):
             element.extract()
 
     def is_webpage_testable(self, xpaths):
@@ -302,7 +309,7 @@ class HeadingContent:
             if dataset.shape[0] != 0:
                 dataset = self.entailment_task(dataset)
             if dataset_with_null.shape[0] != 0:
-                dataset = dataset.append(dataset_with_null, ignore_index=True)
+                dataset = pd.concat([dataset, dataset_with_null], ignore_index=True)
             dataset.drop_duplicates(subset=["heading_text"], inplace=True)
             for heading, heading_text, content in dataset.values:
                 if self.word_matching_check(heading_text, content):
@@ -344,6 +351,6 @@ class HeadingContent:
             response = remove_category_add_param(response)
             return response, success_status
         except Exception as e:
-            logging.error(e)
+            logging.exception("error in HeadingContent.main()")
             response['status']={'success':"False", 'error':"Failed with exception [%s]" % type(e).__name__}
             return response, 400
