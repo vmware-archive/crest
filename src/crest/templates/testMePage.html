@@ -13,6 +13,7 @@
     <link href='favicon.ico' rel='icon' type='image/ico'> -->
     <link href={{ url_for("static", filename="all.css") }} rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@clr/ui@2.0.0/clr-ui.min.css">
     <style>
       a:focus { 
           text-decoration: none; 
@@ -329,6 +330,29 @@
                         </li><br />
                     </ul>
                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class='container'>
+        <div class='row'>
+          <div class='content' style="font-size: 13px;">
+            <h2>Clarity Composition</h2>
+            <div class="alert alert-warning">
+              <div class="alert-items">
+                <div class="alert-item static">
+                  <span class="alert-text">A Clarity alert which should not be
+                    allowed to contain a Clarity card.
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="card-text">This is a Clarity card.</div>
+                      </div>
+                    </div>
+                </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

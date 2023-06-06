@@ -11,6 +11,7 @@ import requests
 import re
 import traceback
 import logging
+from crest.composition.clarity import ClarityComposition
 from crest.perceivable.keyboard_focus_indicator import FocusIndicator
 from crest.perceivable.cc_transcript import AudioVideo
 from crest.operable.heading_analysis import HeadingContent
@@ -30,6 +31,7 @@ class AllFuncCheck:
             fi = FocusIndicator(self.url, self.locator)
             hc = HeadingContent(self.url, self.locator)
             av = AudioVideo(self.url, self.locator)
+            cc = ClarityComposition(self.url, self.locator)
             
             responses = {}
             kfi_thread = Thread(
@@ -44,12 +46,18 @@ class AllFuncCheck:
                 target=lambda responses, arg: responses.update({"ct": av.main()}),
                 args=(responses, ""),
             )
+            cc_thread = Thread(
+                target=lambda responses, arg: responses.update({"cc": (cc.main().asdict(), 200)}),
+                args=(responses, ""),
+            )
             kfi_thread.start()
             ht_thread.start()
             ct_thread.start()
+            cc_thread.start()
             kfi_thread.join()
             ht_thread.join()
             ct_thread.join()
+            cc_thread.join()
 
             categories_error_count =0
             categories_error_items ={}
@@ -87,7 +95,7 @@ class AllFuncCheck:
             output["status"] = {'httpstatuscode': success_status, 'success': 'True'}
             return output, success_status
         except Exception as e:
-            logging.error(e)
+            logging.exception("Exception in AllFuncCheck")
             response={}
             response['status']={'success':"False", 'error':"Failed with exception [%s]" % type(e).__name__}
             return response, 400 

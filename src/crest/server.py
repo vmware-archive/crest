@@ -8,6 +8,7 @@ import logging
 import traceback
 import requests
 import time
+from crest.composition import clarity
 from crest.config import *
 from crest.perceivable import keyboard_focus_indicator
 from crest.perceivable import cc_transcript
@@ -44,6 +45,27 @@ def run():
         response['status']={'success':"False", 'error':"Failed with exception [%s]" % type(e).__name__}
         return response, 400
 
+
+@app.route("/crest/api/composition/clarity", methods=["POST"])
+def run_cc():
+    try:
+        data = request.get_json()
+        logging.debug("Request body data: ", data)
+        locator = (
+            data["reporttype"] if "reporttype" in data else global_args["reporttype"]
+        )
+        clarity_composition = clarity.ClarityComposition(data["url"], locator)
+        response = clarity_composition.main()
+        status_code = 200 if response.status.success else 400
+        response_dict = response.asdict()
+        response_dict["status"]["success"] = str(response_dict["status"]["success"])
+        return response_dict, status_code
+    except Exception as e:
+        logging.exception("Exception in run_clarity_composition")
+        response = {
+            'status': {'success': "False", 'error': "Failed with exception [%s]" % type(e).__name__}
+        }
+        return response, 400
 
 
 @app.route("/crest/api/perceivable/keyboard-focus-indicator", methods=["POST"])

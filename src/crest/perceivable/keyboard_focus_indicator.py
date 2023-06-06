@@ -5,6 +5,7 @@ import time
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import DesiredCapabilities
 from crest.config import *
+from crest import utils
 import webbrowser
 import requests
 import re
@@ -28,6 +29,8 @@ class FocusIndicator:
         self.locator = locator
         self.driver = get_driver()
         self.driver.get(self.url)
+        utils.define_css_path_fn(self.driver)
+        utils.define_absolute_xpath_fn(self.driver)
         self.save_complete_base_css()
         required_width = self.driver.execute_script(
             "return document.body.parentNode.scrollWidth"
@@ -314,8 +317,6 @@ class FocusIndicator:
         logging.debug("Inside saveCompletebase_css")
         self.base_css = self.driver.execute_script("""
         function getKeyboardFocusableElements (element = document) { return [...element.querySelectorAll( 'a, button, input, textarea, select, details,[tabindex]:not([tabindex="-1"])' )] .filter(el => !el.hasAttribute('disabled')) }
-        window.absoluteXPath = function (element) { var comp, comps = []; var parent = null; var xpath = ''; var getPos = function(element) { var position = 1, curNode; if (element.nodeType == Node.ATTRIBUTE_NODE) { return null; } for (curNode = element.previousSibling; curNode; curNode = curNode.previousSibling){ if (curNode.nodeName == element.nodeName) { ++position; } } return position; }; if (element instanceof Document) { return '/'; } for (; element && !(element instanceof Document); element = element.nodeType == Node.ATTRIBUTE_NODE ? element.ownerElement : element.parentNode) { comp = comps[comps.length] = {}; switch (element.nodeType) { case Node.TEXT_NODE: comp.name = 'text()'; break; case Node.ATTRIBUTE_NODE: comp.name = '@' + element.nodeName; break; case Node.PROCESSING_INSTRUCTION_NODE: comp.name = 'processing-instruction()'; break; case Node.COMMENT_NODE: comp.name = 'comment()'; break; case Node.ELEMENT_NODE: comp.name = element.nodeName; break; } comp.position = getPos(element); } for (var i = comps.length - 1; i >= 0; i--) { comp = comps[i]; xpath += '/' + comp.name.toLowerCase(); if (comp.position !== null) { xpath += '[' + comp.position + ']'; } }return xpath;}
-        window.cssPath = function (el) { if (!(el instanceof Element)) return; var path = []; while (el.nodeType === Node.ELEMENT_NODE) { var selector = el.nodeName.toLowerCase(); if (el.id) { selector += "#" + el.id; path.unshift(selector); break; } else { var sib = el, nth = 1; while (sib = sib.previousElementSibling) { if (sib.nodeName.toLowerCase() == selector) nth++; } if (nth != 1) selector += ":nth-of-type("+nth+")"; } path.unshift(selector); el = el.parentNode; } return path.join(" > ");}
         function bgcolor(elem){ var cmpsty = getComputedStyle(elem); var color = cmpsty.getPropertyValue("background-color"); if (color !== "rgba(0, 0, 0, 0)" || elem == document.body) { if(color == "rgba(0, 0, 0, 0)"){return "rgba(255,255,255,0)";}else{return color;}} return bgcolor(elem.parentElement);};
         function getElementCss(element){ var items = {};var compsty = getComputedStyle(element);var len = compsty.length;for (index = 0; index < len; index++){items [compsty[index]] = compsty.getPropertyValue(compsty[index])}; items['background-color']= bgcolor(element); return items;}
         var elements = getKeyboardFocusableElements()

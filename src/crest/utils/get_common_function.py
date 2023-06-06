@@ -59,12 +59,3 @@ def get_driver():
     )
     # driver = webdriver.Chrome(options=chrome_options
     return driver
-
-def check_url():
-    try:
-        response = requests.get(self.url, verify=False)
-        logging.debug("URL is valid and exists on the internet")
-        return True
-    except requests.ConnectionError as exception:
-        logging.error("URL does not exist on Internet")
-        return False

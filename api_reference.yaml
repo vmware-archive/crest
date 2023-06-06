@@ -377,6 +377,89 @@ components:
         status:
           $ref: '#/components/schemas/success_status'
 
+    clarity_composition_issue_item:
+      type: object
+      description: A JSON object that contains information of the Clarity composition check Issue Item.
+      required:
+        - "count"
+        - "description"
+        - "id"
+        - "level"
+      properties:
+        count:
+          type: integer
+          format: int32
+          description: Represents the count of the issue.
+        description:
+          type: string
+          description: Brief description of the issue.
+        id:
+          type: string
+          description: Issue ID name given by Crest.
+
+    clarity_composition_statistics:
+      type: object
+      description: Statistics details related to the Clarity composition Functionality.
+      required:
+        - "allitemcount"
+        - "pageurl"
+        - "time"
+        - "totalelements"
+      properties:
+        allitemcount:
+          type: integer
+          description: Total number of elements that are having issues.
+        pageurl:
+          type: string
+          description: The URL that has been tested.
+        time:
+          type: number
+          description: Time taken to perform the testing.
+        totalelements:
+          type: integer
+          description: Total Clarity Design components that have been tested.
+
+    clarity_composition_items:
+      type: object
+      description: A JSON object represents issues related to the Clarity Composition check.
+      additionalProperties:
+        $ref: '#/components/schemas/cc_transcript_issue_item'
+
+    clarity_composition_errors:
+      type: object
+      description: Error details related to the Clarity composition issue.
+      properties:
+        count:
+          description: Number of errors
+          type: integer
+        description:
+          description: Description of the error
+          type: string
+        items:
+          $ref: '#/components/schemas/clarity_composition_items'
+
+    clarity_composition_categories:
+      type: object
+      description: Identifies type of issue (errors or alerts).
+      properties:
+        error:
+          $ref: '#/components/schemas/clarity_composition_errors'
+
+    clarity_composition_success_response:
+      type: object
+      description: A JSON object that contains information of the Clarity Composition success response.
+      required:
+        - categories
+        - statistics
+        - status
+      properties:
+        categories:
+          $ref: '#/components/schemas/clarity_composition_categories'
+        statistics:
+          $ref: '#/components/schemas/clarity_composition_statistics'
+        status:
+          $ref: '#/components/schemas/success_status'
+
     request_body:
       type: object
       description: |
@@ -906,6 +989,62 @@ paths:
 
         More details can be found at [Understanding Success Criterion 2.4.6](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html).
 
+
+  /crest/api/composition/clarity:
+    post:
+      operationId: clarityComposition
+      tags:
+      - "Composition"
+      summary: "This API's task is to check for disallowed composition of Clarity Design components."
+      requestBody:
+        content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/request_body'
+                example:
+                  url: "http://www.vmware.com"
+                  reporttype: 4
+        required: true
+      responses:
+        '200':
+          description: The Success response contains `categories` that aggregate all the Error and Alert related issues.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/clarity_composition_success_response'
+                example:
+                  categories: 
+                    error:
+                      count: 1
+                      description: "Errors"
+                      items:
+                        cc_card_in_alert":
+                          count: 1,
+                          description: "Found `card` element contained inside a `alert` element, which is not allowed"
+                          id: "cc_card_in_alert"
+                          selectors:
+                          - "html > body > section:nth-of-type(5) > div > div > div > div > div > div > span > div"
+                  statistics:
+                    allitemcount: 1
+                    pageurl: "http://www.vmware.com"
+                    time: 5.13
+                    totalelements: 2
+                  status:
+                    httpstatuscode: 200
+                    success: "True"
+        '400':
+          description: Bad Request, missing something, or the request body wasn't correct.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/failure_response'
+                example:
+                  status: 
+                    error: Failed with exception [WebDriverException]
+                    success: "False"
+      description: |
+        
+        This API's task is to check for disallowed composition of Clarity Design components."
 
   /crest/testMePage:
     get:

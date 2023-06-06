@@ -1,0 +1,1569 @@
+2023-04-11 17:20:21,683:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-11 17:20:21,683:INFO:[33mPress CTRL+C to quit[0m
+2023-04-11 17:21:13,324:INFO:127.0.0.1 - - [11/Apr/2023 17:21:13] "[33mGET / HTTP/1.1[0m" 404 -
+2023-04-11 17:21:13,363:INFO:127.0.0.1 - - [11/Apr/2023 17:21:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-04-11 17:30:20,108:INFO:127.0.0.1 - - [11/Apr/2023 17:30:20] "GET //crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:30:41,268:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:30:41,286:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:30:41,317:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,330:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,334:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:30:41,341:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,341:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,345:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,348:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,350:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,355:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,358:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,364:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,365:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:30:41,412:INFO:127.0.0.1 - - [11/Apr/2023 17:30:41] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:31:19,805:INFO:====== WebDriver manager ======
+2023-04-11 17:31:19,956:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:31:20,292:INFO:There is no [linux64] chromedriver for browser 112.0.5615 in cache
+2023-04-11 17:31:20,292:INFO:About to download new driver from https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_linux64.zip
+2023-04-11 17:31:21,476:INFO:Driver has been saved in cache [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615]
+2023-04-11 17:31:22,254:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:31:22,262:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:31:22,271:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,276:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,281:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:31:22,284:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,286:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,290:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,294:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,299:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,305:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,308:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,309:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,314:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,338:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:22,351:INFO:127.0.0.1 - - [11/Apr/2023 17:31:22] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:31:23,019:INFO:127.0.0.1 - - [11/Apr/2023 17:31:23] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:23,022:INFO:127.0.0.1 - - [11/Apr/2023 17:31:23] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:23,050:INFO:====== WebDriver manager ======
+2023-04-11 17:31:23,200:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:31:23,510:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:31:24,230:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:31:24,237:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:31:24,247:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,250:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,254:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:31:24,259:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,260:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,265:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,268:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,274:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,278:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,280:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,286:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,288:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,295:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:31:24,321:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:31:24,872:INFO:127.0.0.1 - - [11/Apr/2023 17:31:24] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:31:24,905:ERROR:Exception in finding audio player
+2023-04-11 17:31:24,942:INFO:Total number of videos: 0
+2023-04-11 17:31:24,957:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:31:24,957:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:31:25,252:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-11 17:31:28,253:ERROR:'DataFrame' object has no attribute 'append'
+2023-04-11 17:31:28,253:ERROR:'statistics'
+2023-04-11 17:31:28,259:INFO:127.0.0.1 - - [11/Apr/2023 17:31:28] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-11 17:34:01,560:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-11 17:34:01,560:INFO:[33mPress CTRL+C to quit[0m
+2023-04-11 17:34:10,529:INFO:====== WebDriver manager ======
+2023-04-11 17:34:10,695:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:34:11,042:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:34:11,794:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:34:11,804:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:34:11,813:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,815:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,820:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:34:11,825:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,828:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,831:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,832:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,839:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,841:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,845:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,849:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,853:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,858:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:11,904:INFO:127.0.0.1 - - [11/Apr/2023 17:34:11] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:34:12,512:INFO:====== WebDriver manager ======
+2023-04-11 17:34:12,536:INFO:127.0.0.1 - - [11/Apr/2023 17:34:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:12,541:INFO:127.0.0.1 - - [11/Apr/2023 17:34:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:12,574:INFO:127.0.0.1 - - [11/Apr/2023 17:34:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:12,751:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:34:13,050:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:34:13,736:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:34:13,743:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:34:13,753:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,756:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,761:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:34:13,763:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,768:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,772:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,773:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,777:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,782:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,785:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,790:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,795:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,798:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,810:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:13,826:INFO:127.0.0.1 - - [11/Apr/2023 17:34:13] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:34:14,322:INFO:127.0.0.1 - - [11/Apr/2023 17:34:14] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:34:14,377:ERROR:Exception in finding audio player
+2023-04-11 17:34:14,378:INFO:Total number of videos: 0
+2023-04-11 17:34:14,378:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:34:14,383:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:34:14,732:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-11 17:34:17,860:ERROR:'DataFrame' object has no attribute 'append'
+2023-04-11 17:34:17,860:ERROR:'statistics'
+2023-04-11 17:34:17,863:INFO:127.0.0.1 - - [11/Apr/2023 17:34:17] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-11 17:34:24,450:INFO:====== WebDriver manager ======
+2023-04-11 17:34:24,754:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:34:25,189:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:34:26,056:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:34:26,064:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:34:26,074:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,077:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,082:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:34:26,084:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,090:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,093:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,096:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,102:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,103:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,109:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,111:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,117:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,135:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,153:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:34:26,799:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,804:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,821:INFO:127.0.0.1 - - [11/Apr/2023 17:34:26] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:26,834:INFO:====== WebDriver manager ======
+2023-04-11 17:34:27,136:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:34:27,609:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:34:28,342:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:34:28,349:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:34:28,359:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,362:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,365:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:34:28,371:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,375:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,377:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,380:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,387:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,389:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,395:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,396:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,403:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,420:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:34:28,483:INFO:127.0.0.1 - - [11/Apr/2023 17:34:28] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:34:29,057:INFO:127.0.0.1 - - [11/Apr/2023 17:34:29] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:35:34,914:ERROR:Exception in finding audio player
+2023-04-11 17:35:34,930:INFO:Total number of videos: 0
+2023-04-11 17:35:34,931:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:35:34,932:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:35:35,445:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-11 17:35:38,713:ERROR:'DataFrame' object has no attribute 'append'
+2023-04-11 17:35:38,714:ERROR:'statistics'
+2023-04-11 17:35:38,716:INFO:127.0.0.1 - - [11/Apr/2023 17:35:38] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-11 17:37:35,317:INFO:====== WebDriver manager ======
+2023-04-11 17:37:35,856:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:37:36,612:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:37:37,403:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:37:37,411:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:37:37,421:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,427:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,428:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:37:37,440:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,441:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,445:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,449:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,452:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,456:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,460:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,465:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,471:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,481:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:37,511:INFO:127.0.0.1 - - [11/Apr/2023 17:37:37] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:37:38,182:INFO:127.0.0.1 - - [11/Apr/2023 17:37:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:38,185:INFO:127.0.0.1 - - [11/Apr/2023 17:37:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:38,202:INFO:127.0.0.1 - - [11/Apr/2023 17:37:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:38,220:INFO:====== WebDriver manager ======
+2023-04-11 17:37:38,782:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:37:39,479:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:37:40,264:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:37:40,272:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:37:40,281:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,287:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,288:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:37:40,294:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,299:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,301:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,304:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,310:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,313:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,316:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,321:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,325:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,329:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,343:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:37:40,358:INFO:127.0.0.1 - - [11/Apr/2023 17:37:40] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:37:41,025:INFO:127.0.0.1 - - [11/Apr/2023 17:37:41] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:37:41,072:ERROR:Exception in finding audio player
+2023-04-11 17:37:41,078:INFO:Total number of videos: 0
+2023-04-11 17:37:41,083:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:37:41,088:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:37:41,350:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-11 17:37:44,496:ERROR:'DataFrame' object has no attribute 'append'
+2023-04-11 17:37:44,496:ERROR:'statistics'
+2023-04-11 17:37:44,498:INFO:127.0.0.1 - - [11/Apr/2023 17:37:44] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-11 17:38:32,622:INFO:====== WebDriver manager ======
+2023-04-11 17:38:33,290:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:38:34,172:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:38:34,993:INFO:127.0.0.1 - - [11/Apr/2023 17:38:34] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:38:35,001:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:38:35,011:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,018:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:38:35,020:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,023:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,026:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,031:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,035:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,039:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,042:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,047:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,053:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,055:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,060:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,141:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:38:35,686:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,688:INFO:127.0.0.1 - - [11/Apr/2023 17:38:35] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:35,727:INFO:====== WebDriver manager ======
+2023-04-11 17:38:36,409:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:38:37,265:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:38:38,054:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:38:38,065:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:38:38,078:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,079:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,086:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:38:38,088:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,092:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,097:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,098:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,105:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,108:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,113:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,117:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,121:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,127:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:38:38,166:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:38:38,701:INFO:127.0.0.1 - - [11/Apr/2023 17:38:38] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:38:38,757:ERROR:Exception in finding audio player
+2023-04-11 17:38:38,757:INFO:Total number of videos: 0
+2023-04-11 17:38:38,758:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:38:38,758:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:38:39,052:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-11 17:38:41,835:ERROR:'DataFrame' object has no attribute 'append'
+2023-04-11 17:38:41,835:ERROR:'statistics'
+2023-04-11 17:38:41,838:INFO:127.0.0.1 - - [11/Apr/2023 17:38:41] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-11 17:38:54,754:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-11 17:38:54,754:INFO:[33mPress CTRL+C to quit[0m
+2023-04-11 17:39:01,697:INFO:====== WebDriver manager ======
+2023-04-11 17:39:01,889:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:39:02,225:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:39:02,978:INFO:127.0.0.1 - - [11/Apr/2023 17:39:02] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:39:02,987:INFO:127.0.0.1 - - [11/Apr/2023 17:39:02] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:39:02,998:INFO:127.0.0.1 - - [11/Apr/2023 17:39:02] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,000:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,005:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:39:03,009:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,012:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,015:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,022:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,024:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,031:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,032:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,041:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,042:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,046:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:03,110:INFO:127.0.0.1 - - [11/Apr/2023 17:39:03] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:39:03,763:INFO:====== WebDriver manager ======
+2023-04-11 17:39:03,954:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:39:04,270:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:39:04,996:INFO:127.0.0.1 - - [11/Apr/2023 17:39:04] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:39:05,004:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:39:05,018:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,022:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,026:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:39:05,030:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,034:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,039:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,041:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,045:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,052:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,053:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,060:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,061:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,066:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,079:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:05,089:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:39:05,706:INFO:127.0.0.1 - - [11/Apr/2023 17:39:05] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:39:06,140:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-11 17:39:08,754:ERROR:'DataFrame' object has no attribute 'append'
+2023-04-11 17:39:16,453:INFO:Total number of videos: 2
+2023-04-11 17:39:16,453:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 2
+2023-04-11 17:39:16,453:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:39:16,514:ERROR:'statistics'
+2023-04-11 17:39:16,516:INFO:127.0.0.1 - - [11/Apr/2023 17:39:16] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-11 17:39:28,438:INFO:====== WebDriver manager ======
+2023-04-11 17:39:28,761:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:39:29,234:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:39:29,972:INFO:127.0.0.1 - - [11/Apr/2023 17:39:29] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:39:29,980:INFO:127.0.0.1 - - [11/Apr/2023 17:39:29] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:39:29,992:INFO:127.0.0.1 - - [11/Apr/2023 17:39:29] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:29,995:INFO:127.0.0.1 - - [11/Apr/2023 17:39:29] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:29,996:INFO:127.0.0.1 - - [11/Apr/2023 17:39:29] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:39:30,002:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,004:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,009:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,011:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,017:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,020:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,025:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,026:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,034:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,036:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,071:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:39:30,827:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,844:INFO:127.0.0.1 - - [11/Apr/2023 17:39:30] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:30,850:INFO:====== WebDriver manager ======
+2023-04-11 17:39:31,277:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:39:31,801:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:39:32,556:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:39:32,563:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:39:32,573:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,577:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,580:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:39:32,586:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,588:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,591:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,595:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,599:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,602:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,608:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,609:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,614:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,634:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:39:32,685:INFO:127.0.0.1 - - [11/Apr/2023 17:39:32] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:39:33,256:INFO:127.0.0.1 - - [11/Apr/2023 17:39:33] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:39:33,713:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-11 17:39:36,276:ERROR:'DataFrame' object has no attribute 'append'
+2023-04-11 17:39:43,877:INFO:Total number of videos: 2
+2023-04-11 17:39:43,877:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 2
+2023-04-11 17:39:43,877:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 0
+2023-04-11 17:39:43,934:ERROR:'statistics'
+2023-04-11 17:39:43,936:INFO:127.0.0.1 - - [11/Apr/2023 17:39:43] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-11 17:40:10,501:ERROR:'DataFrame' object has no attribute 'append'
+2023-04-11 17:40:10,502:INFO:127.0.0.1 - - [11/Apr/2023 17:40:10] "[31m[1mPOST //crest/api/operable/heading-analysis HTTP/1.1[0m" 400 -
+2023-04-11 17:40:28,143:INFO:127.0.0.1 - - [11/Apr/2023 17:40:28] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:40:31,078:ERROR:'DataFrame' object has no attribute 'append'
+2023-04-11 17:40:31,079:INFO:127.0.0.1 - - [11/Apr/2023 17:40:31] "[31m[1mPOST //crest/api/operable/heading-analysis HTTP/1.1[0m" 400 -
+2023-04-11 17:46:46,980:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-11 17:46:46,980:INFO:[33mPress CTRL+C to quit[0m
+2023-04-11 17:47:10,778:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-11 17:47:10,778:INFO:[33mPress CTRL+C to quit[0m
+2023-04-11 17:47:23,446:INFO:127.0.0.1 - - [11/Apr/2023 17:47:23] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:47:26,537:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-04-11 17:47:26,539:INFO:127.0.0.1 - - [11/Apr/2023 17:47:26] "POST //crest/api/operable/heading-analysis HTTP/1.1" 200 -
+2023-04-11 17:47:51,798:INFO:====== WebDriver manager ======
+2023-04-11 17:47:52,150:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:47:52,699:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:47:53,456:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:47:53,466:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:47:53,474:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,478:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,482:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:47:53,487:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,491:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,495:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,497:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,501:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,505:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,508:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,512:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,517:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,535:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:53,572:INFO:127.0.0.1 - - [11/Apr/2023 17:47:53] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:47:54,175:INFO:127.0.0.1 - - [11/Apr/2023 17:47:54] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:54,178:INFO:127.0.0.1 - - [11/Apr/2023 17:47:54] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:54,196:INFO:127.0.0.1 - - [11/Apr/2023 17:47:54] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:54,215:INFO:====== WebDriver manager ======
+2023-04-11 17:47:54,575:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-11 17:47:55,062:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-11 17:47:55,823:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:47:55,831:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-11 17:47:55,840:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,844:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,848:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-11 17:47:55,852:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,857:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,858:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,865:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,867:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,871:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,876:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,879:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,884:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,887:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-11 17:47:55,918:INFO:127.0.0.1 - - [11/Apr/2023 17:47:55] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-11 17:47:56,498:INFO:127.0.0.1 - - [11/Apr/2023 17:47:56] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-11 17:47:56,849:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-11 17:47:59,524:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-04-11 17:48:12,647:INFO:Total number of videos: 3
+2023-04-11 17:48:12,647:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-04-11 17:48:12,647:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-04-11 17:48:12,727:INFO:127.0.0.1 - - [11/Apr/2023 17:48:12] "POST //crest/api/all HTTP/1.1" 200 -
+2023-04-20 16:33:44,869:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-20 16:33:44,869:INFO:[33mPress CTRL+C to quit[0m
+2023-04-20 16:35:44,803:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-20 16:35:44,804:INFO:[33mPress CTRL+C to quit[0m
+2023-04-20 16:36:36,286:INFO:====== WebDriver manager ======
+2023-04-20 16:36:36,456:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-20 16:36:36,868:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-20 16:36:37,566:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-04-20 16:36:37,620:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-20 16:36:37,630:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-20 16:36:37,639:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,643:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,647:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-20 16:36:37,648:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,652:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,657:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,660:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,666:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,669:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,672:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,675:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,683:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:36:37,840:INFO:127.0.0.1 - - [20/Apr/2023 16:36:37] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-20 16:36:39,330:INFO:127.0.0.1 - - [20/Apr/2023 16:36:39] "POST //crest/api/clarity/nesting HTTP/1.1" 200 -
+2023-04-20 16:47:31,080:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-20 16:47:31,080:INFO:[33mPress CTRL+C to quit[0m
+2023-04-20 16:47:34,690:INFO:====== WebDriver manager ======
+2023-04-20 16:47:34,847:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-20 16:47:35,206:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-20 16:47:35,893:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-04-20 16:47:35,979:INFO:127.0.0.1 - - [20/Apr/2023 16:47:35] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-20 16:47:35,989:INFO:127.0.0.1 - - [20/Apr/2023 16:47:35] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-20 16:47:35,999:INFO:127.0.0.1 - - [20/Apr/2023 16:47:35] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,000:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,004:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-20 16:47:36,010:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,014:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,015:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,022:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,038:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,061:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,062:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,068:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,075:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,077:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,093:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:47:36,117:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-20 16:47:36,629:ERROR:Exception in run_clarity_nesting
+Traceback (most recent call last):
+  File "/home/lcavedon/mayalin/crest/src/crest/server.py", line 61, in run_clarity_nesting
+    response_dict = response.asdict()
+  File "/home/lcavedon/mayalin/crest/src/crest/operation.py", line 59, in asdict
+    return dataclasses.asdict(self, self._dictfactory)
+TypeError: asdict() takes 1 positional argument but 2 were given
+2023-04-20 16:47:36,697:INFO:127.0.0.1 - - [20/Apr/2023 16:47:36] "[31m[1mPOST //crest/api/clarity/nesting HTTP/1.1[0m" 400 -
+2023-04-20 16:48:31,221:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-20 16:48:31,221:INFO:[33mPress CTRL+C to quit[0m
+2023-04-20 16:48:32,038:INFO:====== WebDriver manager ======
+2023-04-20 16:48:32,200:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-20 16:48:32,510:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-20 16:48:33,177:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-04-20 16:48:33,231:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-20 16:48:33,240:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-20 16:48:33,250:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,253:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,258:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-20 16:48:33,262:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,266:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,270:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,274:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,277:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,280:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,285:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,287:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,294:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,297:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-20 16:48:33,426:INFO:127.0.0.1 - - [20/Apr/2023 16:48:33] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-20 16:48:34,072:INFO:127.0.0.1 - - [20/Apr/2023 16:48:34] "POST //crest/api/clarity/nesting HTTP/1.1" 200 -
+2023-04-20 16:49:31,856:INFO:List of Failed headings: ['/html/body/div[2]/div/section[1]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[1]/div/div/div/div/section/div/div[1]/div/div/h1', '/html/body/div[2]/div/section[1]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[1]/div/div/div/div/section/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/h6', '/html/body/div[2]/div/section[1]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[2]/div/div/div/div/section/div/div[1]/div/div/h5', '/html/body/div[2]/div/section[1]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[2]/div/div/div/div/section/div/div[2]/div/div/div/div/section/div/div/div/div[1]/div/div/div[1]/div/div/h6', '/html/body/div[2]/div/section[1]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[2]/div/div/div/div/section/div/div[2]/div/div/div/div/section/div/div/div/div[1]/div/div/div[2]/div/div/h6', '/html/body/div[2]/div/section[1]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[2]/div/div/div/div/section/div/div[2]/div/div/div/div/section/div/div/div/div[1]/div/div/div[3]/div/div/h6', '/html/body/div[2]/div/section[1]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[2]/div/div/div/div/section/div/div[2]/div/div/div/div/section/div/div/div/div[2]/div/div/div[1]/div/div/h6', '/html/body/div[2]/div/section[1]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[2]/div/div/div/div/section/div/div[2]/div/div/div/div/section/div/div/div/div[2]/div/div/div[2]/div/div/h6', '/html/body/div[2]/div/section[2]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[3]/div/div/div/div/section/div/div[1]/div/div/h6', '/html/body/div[2]/div/section[3]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[1]/div/div/div/div/div/div[1]/div/div/h6', '/html/body/div[2]/div/section[3]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[1]/div/div/div/div/div/div[2]/div/div/h6', '/html/body/div[2]/div/section[3]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[1]/div/div/div/div/div/div[3]/div/div/h6', '/html/body/div[2]/div/section[3]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[1]/div/div/div/div/div/div[4]/div/div/h6', '/html/body/div[2]/div/section[3]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[1]/div/div/div/div/div/div[5]/div/div/h6', '/html/body/div[2]/div/section[3]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[1]/div/div/div/div/div/div[6]/div/div/h6', '/html/body/div[2]/div/section[3]/div[2]/div/div/div/section/div/div/div/div/div/div/div[1]/div/div/section/div/div/div/div[1]/div/div/div/div/div/div[7]/div/div/h6', '/html/body/div[3]/div[1]/div/div[2]/div/section/div/div[2]/div[1]/div/div/div/section/div/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/h3', '/html/body/div[3]/div[1]/div/div[2]/div/section/div/div[2]/div[1]/div/div/div/section/div/div/div/div[2]/div/div/div/div/div/div/div/div/div[2]/div/h3', '/html/body/div[3]/div[1]/div/div[2]/div/section/div/div[2]/div[1]/div/div/div/section/div/div/div/div[3]/div/div/div/div/div/div/div/div/div[2]/div/h3', '/html/body/div[3]/div[1]/div/div[3]/div/section/div/div[1]/div/div/h2', '/html/body/div[3]/div[1]/div/div[4]/div/section/div/div[2]/div[1]/div[2]/div/div/section/div/div/div/div[1]/div/div/div/div/div/div/div/div/div/div/div/h3[2]', '/html/body/div[3]/div[1]/div/div[5]/div/section/div/div[1]/div/div/h2', '/html/body/div[3]/div[1]/div/div[7]/div/section/div/div[1]/div/div/h2', '/html/body/div[4]/div[2]/div[1]/h2']
+2023-04-20 16:49:31,863:INFO:127.0.0.1 - - [20/Apr/2023 16:49:31] "POST //crest/api/operable/heading-analysis HTTP/1.1" 200 -
+2023-04-20 16:50:41,727:INFO:====== WebDriver manager ======
+2023-04-20 16:50:41,965:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-20 16:50:42,342:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-20 16:50:50,004:INFO:http://www.vmware.com : Total Elements : 81 : Failed Elements : 4
+2023-04-20 16:50:50,068:INFO:127.0.0.1 - - [20/Apr/2023 16:50:50] "POST //crest/api/perceivable/keyboard-focus-indicator HTTP/1.1" 200 -
+2023-04-20 16:50:58,945:INFO:====== WebDriver manager ======
+2023-04-20 16:50:59,175:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-20 16:50:59,556:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-20 16:51:03,229:INFO:Total number of videos: 0
+2023-04-20 16:51:03,229:INFO:Total number of videos that http://www.vmware.com contains: 0
+2023-04-20 16:51:03,229:INFO:Total number of closed captioning buttons that http://www.vmware.com contains: 0
+2023-04-20 16:51:03,289:INFO:127.0.0.1 - - [20/Apr/2023 16:51:03] "POST //crest/api/perceivable/cc-transcript HTTP/1.1" 200 -
+2023-04-20 16:53:07,240:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-20 16:53:07,240:INFO:[33mPress CTRL+C to quit[0m
+2023-04-20 16:53:44,884:INFO:127.0.0.1 - - [20/Apr/2023 16:53:44] "[33mPOST //crest/api/crest/nesting HTTP/1.1[0m" 404 -
+2023-04-20 16:53:59,567:INFO:====== WebDriver manager ======
+2023-04-20 16:53:59,756:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-20 16:54:00,185:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-20 16:54:00,868:INFO:Fetching URL http://www.vmware.com
+2023-04-20 16:54:05,490:INFO:127.0.0.1 - - [20/Apr/2023 16:54:05] "POST //crest/api/clarity/nesting HTTP/1.1" 200 -
+2023-04-20 16:56:21,067:INFO:====== WebDriver manager ======
+2023-04-20 16:56:21,257:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-20 16:56:21,592:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-20 16:56:28,828:INFO:http://www.vmware.com : Total Elements : 81 : Failed Elements : 4
+2023-04-20 16:56:28,918:INFO:127.0.0.1 - - [20/Apr/2023 16:56:28] "POST //crest/api/perceivable/keyboard-focus-indicator HTTP/1.1" 200 -
+2023-04-20 17:17:47,832:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-20 17:17:47,832:INFO:[33mPress CTRL+C to quit[0m
+2023-04-20 17:17:48,771:INFO:====== WebDriver manager ======
+2023-04-20 17:17:48,955:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-20 17:17:49,339:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-20 17:17:50,043:INFO:Fetching URL http://www.vmware.com
+2023-04-20 17:17:54,603:INFO:127.0.0.1 - - [20/Apr/2023 17:17:54] "POST //crest/api/clarity/nesting HTTP/1.1" 200 -
+2023-04-20 17:31:57,908:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-20 17:31:57,908:INFO:[33mPress CTRL+C to quit[0m
+2023-04-20 17:32:06,202:INFO:====== WebDriver manager ======
+2023-04-20 17:32:06,388:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-20 17:32:06,745:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-20 17:32:07,458:INFO:Fetching URL http://www.vmware.com
+2023-04-20 17:32:11,897:INFO:127.0.0.1 - - [20/Apr/2023 17:32:11] "POST //crest/api/clarity/nesting HTTP/1.1" 200 -
+2023-04-24 11:50:18,727:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-24 11:50:18,727:INFO:[33mPress CTRL+C to quit[0m
+2023-04-24 11:53:46,312:INFO:====== WebDriver manager ======
+2023-04-24 11:53:46,556:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:53:47,036:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:53:47,781:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:53:47,793:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:53:47,806:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,812:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,814:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:53:47,818:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,830:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,830:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,847:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,851:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,861:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,863:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,875:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,878:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,886:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:47,968:INFO:127.0.0.1 - - [24/Apr/2023 11:53:47] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:53:49,467:INFO:====== WebDriver manager ======
+2023-04-24 11:53:49,493:INFO:127.0.0.1 - - [24/Apr/2023 11:53:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:49,500:INFO:127.0.0.1 - - [24/Apr/2023 11:53:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:49,540:INFO:127.0.0.1 - - [24/Apr/2023 11:53:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:49,782:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:53:50,139:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:53:50,898:INFO:127.0.0.1 - - [24/Apr/2023 11:53:50] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:53:50,947:INFO:127.0.0.1 - - [24/Apr/2023 11:53:50] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:53:50,959:INFO:127.0.0.1 - - [24/Apr/2023 11:53:50] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:50,961:INFO:127.0.0.1 - - [24/Apr/2023 11:53:50] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:50,977:INFO:127.0.0.1 - - [24/Apr/2023 11:53:50] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:53:50,982:INFO:127.0.0.1 - - [24/Apr/2023 11:53:50] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:50,989:INFO:127.0.0.1 - - [24/Apr/2023 11:53:50] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:50,995:INFO:127.0.0.1 - - [24/Apr/2023 11:53:50] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:51,003:INFO:127.0.0.1 - - [24/Apr/2023 11:53:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:51,006:INFO:127.0.0.1 - - [24/Apr/2023 11:53:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:51,017:INFO:127.0.0.1 - - [24/Apr/2023 11:53:51] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:53:51,020:INFO:127.0.0.1 - - [24/Apr/2023 11:53:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:51,026:INFO:127.0.0.1 - - [24/Apr/2023 11:53:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:51,034:INFO:127.0.0.1 - - [24/Apr/2023 11:53:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:51,129:INFO:127.0.0.1 - - [24/Apr/2023 11:53:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:51,141:INFO:127.0.0.1 - - [24/Apr/2023 11:53:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:51,651:INFO:====== WebDriver manager ======
+2023-04-24 11:53:51,883:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:53:52,225:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:53:52,917:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-04-24 11:53:52,960:INFO:127.0.0.1 - - [24/Apr/2023 11:53:52] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:53:52,974:INFO:127.0.0.1 - - [24/Apr/2023 11:53:52] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:53:52,988:INFO:127.0.0.1 - - [24/Apr/2023 11:53:52] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:52,995:INFO:127.0.0.1 - - [24/Apr/2023 11:53:52] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:52,997:INFO:127.0.0.1 - - [24/Apr/2023 11:53:52] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:53:53,008:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,017:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,025:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,026:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,029:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,038:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,042:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,059:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,071:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:53:53,130:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,200:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:53:53,670:INFO:127.0.0.1 - - [24/Apr/2023 11:53:53] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:53:54,392:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-24 11:53:59,463:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-04-24 11:54:09,746:INFO:Total number of videos: 3
+2023-04-24 11:54:09,747:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-04-24 11:54:09,747:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-04-24 11:54:09,804:ERROR:cannot unpack non-iterable Response object
+2023-04-24 11:54:09,859:INFO:127.0.0.1 - - [24/Apr/2023 11:54:09] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-24 11:54:42,506:INFO:====== WebDriver manager ======
+2023-04-24 11:54:42,995:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:54:43,728:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:54:44,502:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:54:44,511:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:54:44,531:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,536:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,544:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:54:44,548:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,555:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,568:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,570:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,586:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,596:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,602:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,610:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,628:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,633:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:54:44,674:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:44,686:INFO:127.0.0.1 - - [24/Apr/2023 11:54:44] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:45,340:INFO:====== WebDriver manager ======
+2023-04-24 11:54:45,824:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:54:46,440:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:54:47,263:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:54:47,276:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:54:47,288:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,294:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,301:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:54:47,312:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,313:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,324:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,327:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,339:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,352:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,357:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,365:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,384:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,387:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:47,421:INFO:127.0.0.1 - - [24/Apr/2023 11:54:47] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:54:48,028:INFO:====== WebDriver manager ======
+2023-04-24 11:54:48,522:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:54:49,157:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:54:49,884:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-04-24 11:54:49,928:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:54:49,938:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:54:49,950:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:49,955:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:49,958:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:54:49,967:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:49,971:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:49,975:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:49,982:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:49,987:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:49,989:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:49,996:INFO:127.0.0.1 - - [24/Apr/2023 11:54:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:50,006:INFO:127.0.0.1 - - [24/Apr/2023 11:54:50] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:50,010:INFO:127.0.0.1 - - [24/Apr/2023 11:54:50] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:50,020:INFO:127.0.0.1 - - [24/Apr/2023 11:54:50] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:54:50,031:INFO:127.0.0.1 - - [24/Apr/2023 11:54:50] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:54:50,089:INFO:127.0.0.1 - - [24/Apr/2023 11:54:50] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:50,173:INFO:127.0.0.1 - - [24/Apr/2023 11:54:50] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:50,179:INFO:127.0.0.1 - - [24/Apr/2023 11:54:50] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:54:50,753:INFO:127.0.0.1 - - [24/Apr/2023 11:54:50] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:54:51,300:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-24 11:54:56,239:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-04-24 11:55:06,667:INFO:Total number of videos: 3
+2023-04-24 11:55:06,667:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-04-24 11:55:06,667:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-04-24 11:55:06,724:ERROR:cannot unpack non-iterable Response object
+2023-04-24 11:55:06,779:INFO:127.0.0.1 - - [24/Apr/2023 11:55:06] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-24 11:57:06,001:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-24 11:57:06,002:INFO:[33mPress CTRL+C to quit[0m
+2023-04-24 11:57:08,398:INFO:====== WebDriver manager ======
+2023-04-24 11:57:08,653:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:57:09,110:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:57:09,870:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:57:09,882:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:57:09,893:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,896:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,903:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:57:09,910:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,914:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,919:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,924:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,931:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,935:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,940:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,948:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,956:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:09,973:INFO:127.0.0.1 - - [24/Apr/2023 11:57:09] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:57:10,029:INFO:127.0.0.1 - - [24/Apr/2023 11:57:10] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:10,035:INFO:127.0.0.1 - - [24/Apr/2023 11:57:10] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:10,088:INFO:127.0.0.1 - - [24/Apr/2023 11:57:10] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:10,793:INFO:====== WebDriver manager ======
+2023-04-24 11:57:11,091:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:57:11,530:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:57:12,292:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:57:12,302:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:57:12,323:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,323:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,326:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:57:12,332:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,338:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,345:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,354:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,359:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,369:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,378:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,382:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,393:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,399:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:12,414:INFO:127.0.0.1 - - [24/Apr/2023 11:57:12] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:57:16,512:INFO:====== WebDriver manager ======
+2023-04-24 11:57:16,781:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:57:17,273:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:57:18,019:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-04-24 11:57:18,081:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:57:18,093:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:57:18,111:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,113:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,124:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:57:18,129:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,130:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,144:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,147:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,156:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,163:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,170:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,174:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,191:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:57:18,243:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:57:18,287:INFO:127.0.0.1 - - [24/Apr/2023 11:57:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:57:19,025:INFO:127.0.0.1 - - [24/Apr/2023 11:57:19] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:57:19,676:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-24 11:57:24,247:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-04-24 11:57:34,903:INFO:Total number of videos: 3
+2023-04-24 11:57:34,903:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-04-24 11:57:34,903:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-04-24 11:57:34,960:ERROR:Exception in AllFuncCheck
+Traceback (most recent call last):
+  File "/home/lcavedon/mayalin/crest/src/crest/all_in_one/crest_init.py", line 70, in main
+    for response, _ in responses.values():
+ValueError: too many values to unpack (expected 2)
+2023-04-24 11:57:35,017:INFO:127.0.0.1 - - [24/Apr/2023 11:57:35] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-24 11:58:36,693:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-24 11:58:36,693:INFO:[33mPress CTRL+C to quit[0m
+2023-04-24 11:58:36,707:INFO:====== WebDriver manager ======
+2023-04-24 11:58:36,988:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:58:37,512:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:58:38,314:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:58:38,335:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:58:38,353:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,359:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,364:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:58:38,375:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,378:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,383:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,388:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,393:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,405:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,408:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,415:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,428:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,436:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:38,459:INFO:127.0.0.1 - - [24/Apr/2023 11:58:38] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:58:39,509:INFO:====== WebDriver manager ======
+2023-04-24 11:58:39,559:INFO:127.0.0.1 - - [24/Apr/2023 11:58:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:39,574:INFO:127.0.0.1 - - [24/Apr/2023 11:58:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:39,934:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:58:40,368:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:58:41,118:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:58:41,128:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:58:41,144:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,148:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,161:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,162:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:58:41,171:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,180:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,183:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,200:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,203:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,215:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,229:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,237:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,241:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,260:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:41,271:INFO:127.0.0.1 - - [24/Apr/2023 11:58:41] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:58:41,956:INFO:====== WebDriver manager ======
+2023-04-24 11:58:42,240:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 11:58:42,629:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 11:58:43,341:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-04-24 11:58:43,381:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:58:43,391:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 11:58:43,407:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,412:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,415:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 11:58:43,424:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,426:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,435:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,445:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,448:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,460:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,464:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,472:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,487:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,492:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 11:58:43,541:INFO:127.0.0.1 - - [24/Apr/2023 11:58:43] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 11:58:44,213:INFO:127.0.0.1 - - [24/Apr/2023 11:58:44] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 11:58:44,843:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-24 11:58:49,631:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-04-24 11:59:00,253:INFO:Total number of videos: 3
+2023-04-24 11:59:00,254:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-04-24 11:59:00,254:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-04-24 11:59:00,320:ERROR:Exception in AllFuncCheck
+Traceback (most recent call last):
+  File "/home/lcavedon/mayalin/crest/src/crest/all_in_one/crest_init.py", line 71, in main
+    for response, _ in responses.values():
+ValueError: too many values to unpack (expected 2)
+2023-04-24 11:59:00,376:INFO:127.0.0.1 - - [24/Apr/2023 11:59:00] "[31m[1mPOST //crest/api/all HTTP/1.1[0m" 400 -
+2023-04-24 12:00:57,153:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-24 12:00:57,154:INFO:[33mPress CTRL+C to quit[0m
+2023-04-24 12:01:02,272:INFO:====== WebDriver manager ======
+2023-04-24 12:01:02,544:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 12:01:02,971:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 12:01:03,790:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 12:01:03,806:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 12:01:03,819:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,822:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,828:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 12:01:03,832:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,840:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,842:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,850:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,852:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,860:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,871:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,874:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,883:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,899:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:03,926:INFO:127.0.0.1 - - [24/Apr/2023 12:01:03] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 12:01:04,807:INFO:127.0.0.1 - - [24/Apr/2023 12:01:04] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:04,811:INFO:127.0.0.1 - - [24/Apr/2023 12:01:04] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:04,832:INFO:====== WebDriver manager ======
+2023-04-24 12:01:05,141:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 12:01:05,538:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 12:01:06,276:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 12:01:06,288:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 12:01:06,307:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,313:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,316:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 12:01:06,330:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,332:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,336:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,342:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,353:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,365:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,368:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,386:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,387:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,393:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 12:01:06,447:INFO:127.0.0.1 - - [24/Apr/2023 12:01:06] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:06,871:INFO:====== WebDriver manager ======
+2023-04-24 12:01:07,161:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-04-24 12:01:07,556:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-04-24 12:01:08,302:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-04-24 12:01:08,350:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 12:01:08,359:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "GET /static/all.css HTTP/1.1" 200 -
+2023-04-24 12:01:08,376:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,381:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,386:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-04-24 12:01:08,393:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,396:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,405:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,413:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,420:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,422:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,437:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,449:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,456:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-04-24 12:01:08,504:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-04-24 12:01:08,509:INFO:127.0.0.1 - - [24/Apr/2023 12:01:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-04-24 12:01:09,155:INFO:127.0.0.1 - - [24/Apr/2023 12:01:09] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-04-24 12:01:09,873:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-04-24 12:01:14,465:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-04-24 12:01:24,993:INFO:Total number of videos: 3
+2023-04-24 12:01:24,994:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-04-24 12:01:24,994:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-04-24 12:01:25,111:INFO:127.0.0.1 - - [24/Apr/2023 12:01:25] "POST //crest/api/all HTTP/1.1" 200 -
+2023-04-24 12:36:57,427:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-24 12:36:57,427:INFO:[33mPress CTRL+C to quit[0m
+2023-05-02 14:52:22,192:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-02 14:52:22,193:INFO:[33mPress CTRL+C to quit[0m
+2023-05-02 15:02:09,436:INFO:127.0.0.1 - - [02/May/2023 15:02:09] "[33mPOST //crest/api/composing/clarity HTTP/1.1[0m" 404 -
+2023-05-02 15:02:21,944:INFO:127.0.0.1 - - [02/May/2023 15:02:21] "[33mPOST //crest/api/composing/clarity HTTP/1.1[0m" 404 -
+2023-05-02 15:02:37,728:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:02:37,743:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:02:37,793:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,795:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,796:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:02:37,802:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,805:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,811:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,811:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,817:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,819:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,826:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,826:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,834:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,836:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,844:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,848:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:37,916:INFO:127.0.0.1 - - [02/May/2023 15:02:37] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:02:53,935:INFO:====== WebDriver manager ======
+2023-05-02 15:02:54,122:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:02:54,482:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:02:55,210:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:02:55,218:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:02:55,230:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,233:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,236:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:02:55,242:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,244:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,247:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,254:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,256:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,262:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,267:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,270:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,275:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,278:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:55,296:INFO:127.0.0.1 - - [02/May/2023 15:02:55] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:02:56,171:INFO:127.0.0.1 - - [02/May/2023 15:02:56] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:56,174:INFO:127.0.0.1 - - [02/May/2023 15:02:56] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:56,205:INFO:====== WebDriver manager ======
+2023-05-02 15:02:56,390:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:02:56,685:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:02:57,407:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:02:57,415:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:02:57,423:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,427:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,431:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:02:57,435:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,439:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,443:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,446:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,449:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,452:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,456:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,459:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,466:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,468:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,481:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:57,494:INFO:127.0.0.1 - - [02/May/2023 15:02:57] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:02:58,233:INFO:====== WebDriver manager ======
+2023-05-02 15:02:58,412:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:02:58,679:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:02:59,379:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-05-02 15:02:59,417:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:02:59,425:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:02:59,435:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,441:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,446:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:02:59,448:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,454:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,457:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,460:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,467:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,471:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,476:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,477:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,486:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,487:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:02:59,503:INFO:127.0.0.1 - - [02/May/2023 15:02:59] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:03:00,234:INFO:127.0.0.1 - - [02/May/2023 15:03:00] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:03:00,909:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-05-02 15:03:04,340:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-05-02 15:03:16,720:INFO:Total number of videos: 3
+2023-05-02 15:03:16,720:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-05-02 15:03:16,721:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-05-02 15:03:16,850:INFO:127.0.0.1 - - [02/May/2023 15:03:16] "POST //crest/api/all HTTP/1.1" 200 -
+2023-05-02 15:06:20,358:INFO:====== WebDriver manager ======
+2023-05-02 15:06:20,786:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:06:21,275:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:06:21,983:INFO:Fetching URL http://127.0.0.1:5000/crest/testMePage
+2023-05-02 15:06:22,015:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:06:22,024:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:06:22,032:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,036:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,040:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:06:22,043:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,048:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,051:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,052:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,059:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,061:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,068:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,068:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,077:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,078:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,082:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:06:22,100:INFO:127.0.0.1 - - [02/May/2023 15:06:22] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:06:24,008:INFO:127.0.0.1 - - [02/May/2023 15:06:24] "POST //crest/api/composition/clarity HTTP/1.1" 200 -
+2023-05-02 15:21:11,120:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-02 15:21:11,120:INFO:[33mPress CTRL+C to quit[0m
+2023-05-02 15:26:36,500:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:26:36,516:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[36mGET /static/all.css HTTP/1.1[0m" 304 -
+2023-05-02 15:26:36,555:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,558:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,559:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[36mGET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1[0m" 304 -
+2023-05-02 15:26:36,564:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,568:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,571:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,575:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,580:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,581:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,591:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,592:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,596:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:26:36,601:INFO:127.0.0.1 - - [02/May/2023 15:26:36] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:26:38,566:INFO:127.0.0.1 - - [02/May/2023 15:26:38] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:26:38,622:INFO:127.0.0.1 - - [02/May/2023 15:26:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-02 15:26:39,831:INFO:127.0.0.1 - - [02/May/2023 15:26:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:26:39,834:INFO:127.0.0.1 - - [02/May/2023 15:26:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,346:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:28:19,372:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[36mGET /static/all.css HTTP/1.1[0m" 304 -
+2023-05-02 15:28:19,389:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,394:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,400:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[36mGET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1[0m" 304 -
+2023-05-02 15:28:19,408:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,418:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,422:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:28:19,434:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,450:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,457:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,459:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,482:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:28:19,577:INFO:127.0.0.1 - - [02/May/2023 15:28:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:32,436:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:31:32,451:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:31:32,475:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:32,479:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:32,487:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:32,495:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:32,504:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:31:32,510:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:32,513:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:32,541:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:32,553:INFO:127.0.0.1 - - [02/May/2023 15:31:32] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:31:33,149:INFO:127.0.0.1 - - [02/May/2023 15:31:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-02 15:31:45,097:INFO:====== WebDriver manager ======
+2023-05-02 15:31:45,278:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:31:45,554:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:31:46,260:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:31:46,268:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:31:46,278:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,282:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,287:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,287:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:31:46,291:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,294:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,298:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,302:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,307:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,311:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,316:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,318:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,322:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,335:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:46,732:INFO:127.0.0.1 - - [02/May/2023 15:31:46] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:31:48,383:INFO:127.0.0.1 - - [02/May/2023 15:31:48] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:48,386:INFO:127.0.0.1 - - [02/May/2023 15:31:48] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:48,419:INFO:====== WebDriver manager ======
+2023-05-02 15:31:48,600:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:31:48,913:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:31:49,639:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:31:49,647:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:31:49,659:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,663:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,666:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:31:49,671:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,675:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,679:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,682:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,687:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,689:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,695:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,698:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,707:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,708:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:49,846:INFO:127.0.0.1 - - [02/May/2023 15:31:49] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:31:50,455:INFO:====== WebDriver manager ======
+2023-05-02 15:31:50,630:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:31:50,950:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:31:51,627:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-05-02 15:31:51,670:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:31:51,679:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:31:51,687:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,690:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,695:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:31:51,701:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,703:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,706:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,713:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,714:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,718:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,725:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,727:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,732:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,736:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:31:51,745:INFO:127.0.0.1 - - [02/May/2023 15:31:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:31:52,249:INFO:127.0.0.1 - - [02/May/2023 15:31:52] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:31:52,814:INFO:127.0.0.1 - - [02/May/2023 15:31:52] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:31:53,246:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-05-02 15:31:56,720:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-05-02 15:32:09,175:INFO:Total number of videos: 3
+2023-05-02 15:32:09,176:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-05-02 15:32:09,176:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-05-02 15:32:09,298:INFO:127.0.0.1 - - [02/May/2023 15:32:09] "POST //crest/api/all HTTP/1.1" 200 -
+2023-05-02 15:35:18,080:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:35:18,093:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[36mGET /static/all.css HTTP/1.1[0m" 304 -
+2023-05-02 15:35:18,114:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:18,116:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:18,132:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:18,138:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:18,142:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[36mGET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1[0m" 304 -
+2023-05-02 15:35:18,147:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:35:18,153:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:18,157:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:18,178:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:18,180:INFO:127.0.0.1 - - [02/May/2023 15:35:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:29,738:INFO:127.0.0.1 - - [02/May/2023 15:35:29] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:35:29,752:INFO:127.0.0.1 - - [02/May/2023 15:35:29] "[36mGET /static/all.css HTTP/1.1[0m" 304 -
+2023-05-02 15:35:29,813:INFO:127.0.0.1 - - [02/May/2023 15:35:29] "[36mGET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1[0m" 304 -
+2023-05-02 15:35:39,570:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-02 15:35:39,571:INFO:[33mPress CTRL+C to quit[0m
+2023-05-02 15:35:50,355:INFO:====== WebDriver manager ======
+2023-05-02 15:35:50,540:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:35:50,824:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:35:51,581:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:35:51,589:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:35:51,601:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,601:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,605:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:35:51,611:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,614:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,615:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,620:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,624:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,630:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,631:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,637:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,643:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,646:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:51,722:INFO:127.0.0.1 - - [02/May/2023 15:35:51] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:35:52,505:INFO:127.0.0.1 - - [02/May/2023 15:35:52] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:52,509:INFO:127.0.0.1 - - [02/May/2023 15:35:52] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:52,539:INFO:====== WebDriver manager ======
+2023-05-02 15:35:52,737:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:35:52,985:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:35:53,704:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:35:53,711:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:35:53,721:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,725:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,734:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:35:53,735:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,739:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,739:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,744:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,749:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,754:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,758:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,760:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,770:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,770:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:53,923:INFO:127.0.0.1 - - [02/May/2023 15:35:53] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:35:54,521:INFO:====== WebDriver manager ======
+2023-05-02 15:35:54,734:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:35:55,012:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:35:55,716:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-05-02 15:35:55,753:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:35:55,761:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:35:55,772:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,777:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,778:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:35:55,782:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,787:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,790:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,795:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,798:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,799:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,805:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,808:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,814:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:35:55,823:INFO:127.0.0.1 - - [02/May/2023 15:35:55] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:35:56,327:INFO:127.0.0.1 - - [02/May/2023 15:35:56] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:35:56,957:INFO:127.0.0.1 - - [02/May/2023 15:35:56] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:35:57,409:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-05-02 15:36:00,987:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-05-02 15:36:12,963:INFO:Total number of videos: 3
+2023-05-02 15:36:12,963:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-05-02 15:36:12,964:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-05-02 15:36:13,087:INFO:127.0.0.1 - - [02/May/2023 15:36:13] "POST //crest/api/all HTTP/1.1" 200 -
+2023-05-02 15:37:01,147:INFO:====== WebDriver manager ======
+2023-05-02 15:37:01,471:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:37:01,909:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:37:02,664:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:37:02,671:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:37:02,686:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,690:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,698:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:37:02,702:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,704:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,706:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,710:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,716:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,720:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,724:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,730:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,735:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,737:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:02,862:INFO:127.0.0.1 - - [02/May/2023 15:37:02] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:37:03,489:INFO:127.0.0.1 - - [02/May/2023 15:37:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:03,492:INFO:127.0.0.1 - - [02/May/2023 15:37:03] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:03,525:INFO:====== WebDriver manager ======
+2023-05-02 15:37:03,851:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:37:04,299:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:37:05,057:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:37:05,065:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:37:05,075:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,078:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,083:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:37:05,088:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,090:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,094:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,096:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,102:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,106:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,110:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,114:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,119:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,122:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:05,641:INFO:127.0.0.1 - - [02/May/2023 15:37:05] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:37:07,287:INFO:====== WebDriver manager ======
+2023-05-02 15:37:07,584:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 15:37:07,986:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 15:37:08,678:INFO:Fetching URL http://localhost:5000/crest/testMePage
+2023-05-02 15:37:08,769:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:37:08,780:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 15:37:08,791:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,793:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,797:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 15:37:08,801:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,803:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,809:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,811:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,824:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,832:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,834:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,841:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,848:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,858:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:08,863:INFO:127.0.0.1 - - [02/May/2023 15:37:08] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 15:37:09,011:INFO:127.0.0.1 - - [02/May/2023 15:37:09] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 15:37:09,572:INFO:127.0.0.1 - - [02/May/2023 15:37:09] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 15:37:10,122:INFO:http://localhost:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-05-02 15:37:14,290:INFO:List of Failed headings: ['html > body > section:nth-of-type(4) > div > div > div > div > div > ul:nth-of-type(2) > li:nth-of-type(2) > h4', 'html > body > section:nth-of-type(4) > div > div > div > div > div > ul:nth-of-type(2) > li > h4', 'html > body > section:nth-of-type(4) > div > div > div > div > div > ul:nth-of-type(2) > li:nth-of-type(3) > div > h4']
+2023-05-02 15:37:20,657:INFO:Total number of videos: 3
+2023-05-02 15:37:20,657:INFO:Total number of videos that http://localhost:5000/crest/testMePage contains: 3
+2023-05-02 15:37:20,658:INFO:Total number of closed captioning buttons that http://localhost:5000/crest/testMePage contains: 1
+2023-05-02 15:37:20,770:INFO:127.0.0.1 - - [02/May/2023 15:37:20] "POST //crest/api/all HTTP/1.1" 200 -
+2023-05-02 16:16:15,609:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-02 16:16:15,609:INFO:[33mPress CTRL+C to quit[0m
+2023-05-02 16:16:22,695:INFO:====== WebDriver manager ======
+2023-05-02 16:16:22,853:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 16:16:23,170:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 16:16:23,863:INFO:Fetching URL http://127.0.0.1:5000
+2023-05-02 16:16:23,907:INFO:127.0.0.1 - - [02/May/2023 16:16:23] "[33mGET / HTTP/1.1[0m" 404 -
+2023-05-02 16:16:24,726:INFO:127.0.0.1 - - [02/May/2023 16:16:24] "POST //crest/api/composition/clarity HTTP/1.1" 200 -
+2023-05-02 16:16:38,615:INFO:====== WebDriver manager ======
+2023-05-02 16:16:38,805:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 16:16:39,095:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 16:16:39,803:INFO:Fetching URL http://127.0.0.1:5000/crest/testMePage
+2023-05-02 16:16:39,888:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 16:16:39,899:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 16:16:39,909:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,911:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,917:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 16:16:39,919:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,924:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,927:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,929:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,937:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,938:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,945:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,946:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,949:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:16:39,955:INFO:127.0.0.1 - - [02/May/2023 16:16:39] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:16:40,185:INFO:127.0.0.1 - - [02/May/2023 16:16:40] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 16:16:42,042:INFO:127.0.0.1 - - [02/May/2023 16:16:42] "POST //crest/api/composition/clarity HTTP/1.1" 200 -
+2023-05-02 16:17:18,051:INFO:====== WebDriver manager ======
+2023-05-02 16:17:18,203:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 16:17:18,518:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 16:17:19,241:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 16:17:19,249:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 16:17:19,260:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,263:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,267:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 16:17:19,272:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,274:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,278:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,285:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,286:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,291:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,297:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,302:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,306:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,308:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:19,726:INFO:127.0.0.1 - - [02/May/2023 16:17:19] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 16:17:21,706:INFO:127.0.0.1 - - [02/May/2023 16:17:21] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:21,709:INFO:127.0.0.1 - - [02/May/2023 16:17:21] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:21,726:INFO:127.0.0.1 - - [02/May/2023 16:17:21] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:21,739:INFO:====== WebDriver manager ======
+2023-05-02 16:17:21,917:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 16:17:22,218:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 16:17:23,011:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 16:17:23,019:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 16:17:23,030:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,034:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,041:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,042:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 16:17:23,046:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,051:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,053:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,058:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,060:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,067:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,068:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,075:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,092:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:23,140:INFO:127.0.0.1 - - [02/May/2023 16:17:23] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 16:17:23,714:INFO:====== WebDriver manager ======
+2023-05-02 16:17:23,872:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-02 16:17:24,173:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-02 16:17:24,859:INFO:Fetching URL http://127.0.0.1:5000/crest/testMePage
+2023-05-02 16:17:24,942:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 16:17:24,950:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-02 16:17:24,966:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:24,966:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:24,970:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-02 16:17:24,974:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:24,978:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:24,982:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:24,985:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:24,991:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:24,993:INFO:127.0.0.1 - - [02/May/2023 16:17:24] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:25,000:INFO:127.0.0.1 - - [02/May/2023 16:17:25] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:25,003:INFO:127.0.0.1 - - [02/May/2023 16:17:25] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:25,010:INFO:127.0.0.1 - - [02/May/2023 16:17:25] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-02 16:17:25,011:INFO:127.0.0.1 - - [02/May/2023 16:17:25] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-02 16:17:25,158:INFO:127.0.0.1 - - [02/May/2023 16:17:25] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-02 16:17:25,717:INFO:127.0.0.1 - - [02/May/2023 16:17:25] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-02 16:17:26,261:INFO:http://127.0.0.1:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-05-02 16:17:29,634:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-05-02 16:17:42,180:INFO:Total number of videos: 3
+2023-05-02 16:17:42,181:INFO:Total number of videos that http://127.0.0.1:5000/crest/testMePage contains: 3
+2023-05-02 16:17:42,181:INFO:Total number of closed captioning buttons that http://127.0.0.1:5000/crest/testMePage contains: 1
+2023-05-02 16:17:42,261:INFO:127.0.0.1 - - [02/May/2023 16:17:42] "POST //crest/api/all HTTP/1.1" 200 -
+2023-05-03 10:19:05,711:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-03 10:19:05,711:INFO:[33mPress CTRL+C to quit[0m
+2023-05-03 10:19:10,933:INFO:====== WebDriver manager ======
+2023-05-03 10:19:11,157:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-03 10:19:11,537:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-03 10:19:12,251:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-03 10:19:12,260:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-03 10:19:12,272:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,272:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,276:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-03 10:19:12,281:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,283:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,288:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,314:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,328:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,329:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,335:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,341:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,344:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,353:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,356:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,359:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:12,789:INFO:127.0.0.1 - - [03/May/2023 10:19:12] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-03 10:19:14,511:INFO:127.0.0.1 - - [03/May/2023 10:19:14] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:14,541:INFO:====== WebDriver manager ======
+2023-05-03 10:19:14,743:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-03 10:19:15,126:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-03 10:19:15,859:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-03 10:19:15,867:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-03 10:19:15,876:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,880:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,882:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-03 10:19:15,887:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,891:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,895:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,897:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,903:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,908:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,910:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,914:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,917:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,923:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:15,936:INFO:127.0.0.1 - - [03/May/2023 10:19:15] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:16,137:INFO:127.0.0.1 - - [03/May/2023 10:19:16] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-03 10:19:16,749:INFO:====== WebDriver manager ======
+2023-05-03 10:19:16,942:INFO:Get LATEST chromedriver version for google-chrome 112.0.5615
+2023-05-03 10:19:17,250:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615/chromedriver] found in cache
+2023-05-03 10:19:17,937:INFO:Fetching URL http://127.0.0.1:5000/crest/testMePage
+2023-05-03 10:19:17,985:INFO:127.0.0.1 - - [03/May/2023 10:19:17] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-03 10:19:17,994:INFO:127.0.0.1 - - [03/May/2023 10:19:17] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-03 10:19:18,005:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,008:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,013:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-03 10:19:18,017:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,023:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,026:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,028:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,033:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,037:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,041:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,045:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,050:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,066:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-03 10:19:18,238:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-03 10:19:18,919:INFO:127.0.0.1 - - [03/May/2023 10:19:18] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-03 10:19:18,998:ERROR:Exception in finding audio player
+2023-05-03 10:19:19,000:INFO:Total number of videos: 0
+2023-05-03 10:19:19,000:INFO:Total number of videos that http://127.0.0.1:5000/crest/testMePage contains: 0
+2023-05-03 10:19:19,000:INFO:Total number of closed captioning buttons that http://127.0.0.1:5000/crest/testMePage contains: 0
+2023-05-03 10:19:19,401:INFO:http://127.0.0.1:5000/crest/testMePage : Total Elements : 7 : Failed Elements : 2
+2023-05-03 10:19:23,778:INFO:List of Failed headings: ['/html/body/section[4]/div/div/div/div/div/ul[2]/li[2]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[1]/h4', '/html/body/section[4]/div/div/div/div/div/ul[2]/li[3]/div[1]/h4']
+2023-05-03 10:19:23,781:INFO:127.0.0.1 - - [03/May/2023 10:19:23] "POST //crest/api/all HTTP/1.1" 200 -
+2023-05-09 17:44:10,717:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-09 17:44:10,719:INFO:[33mPress CTRL+C to quit[0m
+2023-05-09 17:48:03,240:INFO:127.0.0.1 - - [09/May/2023 17:48:03] "[33mPOST //crest/api/composition/clarity HTTP/1.1[0m" 404 -
+2023-05-09 17:48:16,188:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-09 17:48:16,208:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-09 17:48:16,247:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,257:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,259:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-09 17:48:16,271:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,275:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,278:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,284:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,290:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,297:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,298:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,305:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,322:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,322:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:48:16,376:INFO:127.0.0.1 - - [09/May/2023 17:48:16] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-09 17:48:17,472:INFO:127.0.0.1 - - [09/May/2023 17:48:17] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:48:17,476:INFO:127.0.0.1 - - [09/May/2023 17:48:17] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:48:24,392:INFO:127.0.0.1 - - [09/May/2023 17:48:24] "[33mPOST //crest/api/composition/clarity HTTP/1.1[0m" 404 -
+2023-05-09 17:49:15,154:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-09 17:49:15,154:INFO:[33mPress CTRL+C to quit[0m
+2023-05-09 17:49:18,869:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-09 17:49:18,898:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[36mGET /static/all.css HTTP/1.1[0m" 304 -
+2023-05-09 17:49:18,909:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:18,914:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[36mGET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1[0m" 304 -
+2023-05-09 17:49:18,921:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:18,931:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:18,934:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:18,946:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:18,956:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:18,975:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:18,988:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:18,992:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:18,999:INFO:127.0.0.1 - - [09/May/2023 17:49:18] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:19,011:INFO:127.0.0.1 - - [09/May/2023 17:49:19] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:19,019:INFO:127.0.0.1 - - [09/May/2023 17:49:19] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:20,745:INFO:127.0.0.1 - - [09/May/2023 17:49:20] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-09 17:49:20,906:INFO:127.0.0.1 - - [09/May/2023 17:49:20] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:20,910:INFO:127.0.0.1 - - [09/May/2023 17:49:20] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:26,576:INFO:====== WebDriver manager ======
+2023-05-09 17:49:26,828:INFO:Get LATEST chromedriver version for google-chrome
+2023-05-09 17:49:26,957:INFO:About to download new driver from https://chromedriver.storage.googleapis.com/112.0.5615.49/chromedriver_linux64.zip
+2023-05-09 17:49:27,578:INFO:Driver has been saved in cache [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615.49]
+2023-05-09 17:49:28,302:INFO:Fetching URL http://127.0.0.1:5000/crest/testMePage
+2023-05-09 17:49:28,357:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-09 17:49:28,366:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-09 17:49:28,385:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,394:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,400:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-09 17:49:28,406:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,412:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,439:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,444:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,446:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,456:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,463:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,473:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,481:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:49:28,661:INFO:127.0.0.1 - - [09/May/2023 17:49:28] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-09 17:49:30,488:INFO:127.0.0.1 - - [09/May/2023 17:49:30] "POST //crest/api/composition/clarity HTTP/1.1" 200 -
+2023-05-09 17:49:49,954:INFO:127.0.0.1 - - [09/May/2023 17:49:49] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:51:11,675:INFO:====== WebDriver manager ======
+2023-05-09 17:51:11,978:INFO:Driver [/home/lcavedon/.wdm/drivers/chromedriver/linux64/112.0.5615.49/chromedriver] found in cache
+2023-05-09 17:51:12,674:INFO:Fetching URL http://127.0.0.1:5000/crest/testMePage
+2023-05-09 17:51:12,718:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "GET /crest/testMePage HTTP/1.1" 200 -
+2023-05-09 17:51:12,728:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "GET /static/all.css HTTP/1.1" 200 -
+2023-05-09 17:51:12,744:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,751:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,753:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "GET /static/UT20_AmitGarg_Transcript.vtt HTTP/1.1" 200 -
+2023-05-09 17:51:12,758:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,763:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,770:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,776:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,780:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,787:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,794:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,805:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,807:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,810:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/interview_audio.m4a HTTP/1.1[0m" 206 -
+2023-05-09 17:51:12,817:INFO:127.0.0.1 - - [09/May/2023 17:51:12] "[35m[1mGET /static/UT20_AmitGarg_Poster_Video.mp4 HTTP/1.1[0m" 206 -
+2023-05-09 17:51:13,215:INFO:127.0.0.1 - - [09/May/2023 17:51:13] "[33mGET /img/peelback.png HTTP/1.1[0m" 404 -
+2023-05-09 17:51:16,374:INFO:127.0.0.1 - - [09/May/2023 17:51:16] "POST //crest/api/composition/clarity HTTP/1.1" 200 -
